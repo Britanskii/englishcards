@@ -36,6 +36,10 @@ const Learn = (props: LearnProps) => {
         }
     }
 
+    const onIDontKnow = (id: number) => {
+        setActiveCard(arrayCards[getRandomIntenger(0, arrayCards.length)].id)
+    }
+
     useEffect(() => {
         setActiveCard(getCardRandomId(props.arrayCards))
     }, [])
@@ -44,7 +48,7 @@ const Learn = (props: LearnProps) => {
 
         return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
                      synonymous={card.synonymous} examples={card.examples} key={card.id} animationKey={card.id} id={card.id}
-                     activeCard={activeCard} onIKnow={onIKnow}/>
+                     activeCard={activeCard} onIKnow={onIKnow} onIDontKnow = {onIDontKnow}/>
     })
 
     return (
