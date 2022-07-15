@@ -10,7 +10,7 @@ export interface CardProps {
     id: number,
     animationKey: number,
     length: number,
-    setActiveCard: (number: number) => void,
+    onIKnow: (number: number) => void,
     word: WordI,
     antonym: AntonymI
     synonymous: SynonymousI
@@ -18,7 +18,7 @@ export interface CardProps {
     examples: ExampleI[]
 }
 
-const Card = ({word, image, antonym, synonymous, examples, activeCard, id, setActiveCard, animationKey, length}: CardProps) => {
+const Card = ({word, image, antonym, synonymous, examples, activeCard, id, onIKnow, animationKey, length}: CardProps) => {
 
     const [answer, setAnswer] = useState(false)
     const [activeImg, setActiveImg] = useState(false)
@@ -55,13 +55,13 @@ const Card = ({word, image, antonym, synonymous, examples, activeCard, id, setAc
     }
 
     const dragNextCard = () => {
-        setActiveCard(getRandomIntenger(0, length))
+        onIKnow(id)
     }
 
     const onDragEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
         if (info.offset.x > sensitivity) {
-            dragNextCard()
         } else if (info.offset.x < -sensitivity) {
+            dragNextCard()
             console.log("LEFT")
         }
     }

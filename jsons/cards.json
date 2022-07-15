@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "word": {
       "proposal": "career",
       "translated": "Курс"
@@ -22,7 +22,7 @@
     "image": "https://www.jobgrade.ru/wp-content/uploads/2019/08/к4.jpg"
   },
   {
-    "id": 2,
+    "id": 1,
     "word": {
       "proposal": "Supply",
       "translated": "Поставка"
@@ -44,7 +44,7 @@
     "image": "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
   },
   {
-    "id": 3,
+    "id": 2,
     "word": {
       "proposal": "Describe ",
       "translated": "Описать"

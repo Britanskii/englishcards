@@ -16,33 +16,35 @@ const Learn = (props: LearnProps) => {
 
     const [arrayCards, setArrayCards] = useState<CardI[]>(props.arrayCards)
     const [activeCard, setActiveCard] = useState(0)
-    const [pastCard, setPastCard] = useState<number | null>(null)
 
-    const genNewArrayCards = (array: CardI[]) => {
-        if (array !== undefined) {
-            let newArrayCards: CardI[] = []
-            if (array.length > 1) {
-                newArrayCards = array.filter((card) => {
+    const getCardRandomId = (array: CardI[]) => {
+        return array[getRandomIntenger(0, array.length)].id
+    }
 
-                    return card.id !== pastCard
+    const onIKnow = (id: number) => {
+        if (arrayCards !== undefined) {
+            if (arrayCards.length > 1) {
+                let newArrayCards: CardI[] = []
+                newArrayCards = arrayCards.filter((card) => {
+                    console.log(card.id)
+                    return card.id !== id
                 })
-            }
 
-            setArrayCards(newArrayCards)
+                setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
+                setArrayCards(newArrayCards)
+            }
         }
     }
 
     useEffect(() => {
-        setPastCard(activeCard)
+        setActiveCard(getCardRandomId(props.arrayCards))
+    }, [])
 
-        genNewArrayCards(arrayCards)
-    }, [activeCard])
-
-    const cards = arrayCards.map((card, id) => {
+    const cards = arrayCards.map((card) => {
 
         return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
-                     synonymous={card.synonymous} examples={card.examples} key={id} animationKey={id} id={id}
-                     activeCard={activeCard} setActiveCard={setActiveCard}/>
+                     synonymous={card.synonymous} examples={card.examples} key={card.id} animationKey={card.id} id={card.id}
+                     activeCard={activeCard} onIKnow={onIKnow}/>
     })
 
     return (
