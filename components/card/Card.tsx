@@ -11,7 +11,7 @@ export interface CardProps {
     animationKey: number,
     length: number,
     onIKnow: (number: number) => void,
-    onIDontKnow: (number: number) => void,
+    onIDontKnow: () => void,
     word: WordI,
     antonym: AntonymI
     synonymous: SynonymousI
@@ -59,7 +59,7 @@ const Card = ({word, image, antonym, synonymous, examples, activeCard, id, onIKn
         const x = info.offset.x
 
         if (x > sensitivity) {
-            onIDontKnow(id)
+            onIDontKnow()
         } else if (x < -sensitivity) {
             onIKnow(id)
         }
