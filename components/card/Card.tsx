@@ -95,7 +95,7 @@ const Card = ({word, image, antonym, synonymous, examples, activeCard, id, setAc
                                 Посмотреть
                             </div>
                             <div className={s.card__answer}>
-                                <div className={s.card__capitalize}>{word.translated} — <span className ="green">{synonymous.translated}</span> — <span className="red">{antonym.translated}</span></div>
+                                <div className={s.card__capitalize}>{word.translated} — <span className ="synonymous">{synonymous.translated}</span> — <span className="antonym">{antonym.translated}</span></div>
                                 <div className={s.card__examples}>
                                     {examples.map((example, id) => {
                                             return <Dropdown

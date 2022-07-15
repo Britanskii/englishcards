@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion"
 import {CardI} from "../../interfaces/interfaces";
 import {getRandomIntenger} from "../../functions/randomNumber";
+import LinkNext from "../../components/link/Link";
 
 const arrayCardsRaw: CardI[] = [
     {
@@ -21,8 +22,8 @@ const arrayCardsRaw: CardI[] = [
         },
         examples: [
             {
-                proposal: "The webcam <b>career</b> <b className ='green'>course</b> is my <b className ='red'>vocation</b>",
-                translated: "<b className ='green'>Курс</b> по <b>карьере</b> в вебкаме это моё <b className ='red'>призвание</b>"
+                proposal: "The webcam <b>career</b> <b className ='synonymous'>course</b> is my <b className ='antonym'>vocation</b>",
+                translated: "<b className ='synonymous'>Курс</b> по <b>карьере</b> в вебкаме это моё <b className ='antonym'>призвание</b>"
             }
         ],
         image: "https://www.jobgrade.ru/wp-content/uploads/2019/08/к4.jpg"
@@ -42,8 +43,8 @@ const arrayCardsRaw: CardI[] = [
         },
         examples: [
             {
-                proposal: "We can <b className ='green'>afford</b> to <b>supply</b>> new gachi-belts, but then we would be in <b className ='red'>debt</b>",
-                translated: "Мы можем <b className ='green'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='red'>долгах</b>"
+                proposal: "We can <b className ='synonymous'>afford</b> to <b>supply</b>> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
+                translated: "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
             }
         ],
         image: "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
@@ -63,8 +64,8 @@ const arrayCardsRaw: CardI[] = [
         },
         examples: [
             {
-                proposal: "We can <b className ='green'>afford</b> to <b>supply</b>> new gachi-belts, but then we would be in <b className ='red'>debt</b>",
-                translated: "Мы можем <b className ='green'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='red'>долгах</b>"
+                proposal: "We can <b className ='synonymous'>afford</b> to <b>supply</b> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
+                translated: "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
             }
         ],
         image: "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
@@ -100,17 +101,21 @@ const Index = () => {
     }, [])
 
 
-
     const cards = arrayCards.map((card, id) => {
 
-        return <Card image={card.image} length = {arrayCards.length} word = {card.word} antonym={card.antonym} synonymous={card.synonymous} examples={card.examples} key = {id} animationKey = {id} id = {id} activeCard={activeCard} setActiveCard = {setActiveCard}/>
+        return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
+                     synonymous={card.synonymous} examples={card.examples} key={id} animationKey={id} id={id}
+                     activeCard={activeCard} setActiveCard={setActiveCard}/>
     })
 
     return (
-        <div  className={s.main}>
+        <div className={s.learn}>
             <AnimatePresence exitBeforeEnter>
                 {cards}
             </AnimatePresence>
+            <LinkNext className={`button ${s.learn__back}`} href={"/"}>
+                Назад
+            </LinkNext>
         </div>
     )
 }
