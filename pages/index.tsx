@@ -5,8 +5,6 @@ import LinkNext from "../components/link/Link";
 
 const Home: NextPage = () => {
 
-
-
     return (
         <div className={s.main}>
             <LinkNext className={"button"} href = "/learn">

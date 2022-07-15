@@ -41,8 +41,9 @@ const Learn = (props: LearnProps) => {
     }
 
     useEffect(() => {
-        setArrayCards(props.arrayCards)
-        setActiveCard(getCardRandomId(props.arrayCards))
+        // setArrayCards(props.arrayCards)
+        setArrayCards([])
+        // setActiveCard(getCardRandomId(props.arrayCards))
     }, [props.arrayCards])
 
     const cards = arrayCards.map((card) => {
@@ -64,14 +65,14 @@ const Learn = (props: LearnProps) => {
     )
 }
 
-export const getStaticProps = async () => {
-    const response = await fetch( `${process.env.API_URL}/api/cards`)
-
-    const arrayCards = await response.json()
-
-    return {
-        props: {arrayCards, fallback: false}
-    }
-}
+// export const getStaticProps = async () => {
+//     const response = await fetch( `${process.env.API_URL}/api/cards`)
+//
+//     const arrayCards = await response.json()
+//
+//     return {
+//         props: {arrayCards, fallback: false}
+//     }
+// }
 
 export default Learn
