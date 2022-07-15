@@ -17,18 +17,13 @@ const Learn = (props: LearnProps) => {
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
 
-    const getCardRandomId = (array: CardI[]) => {
-        return array[getRandomIntenger(0, array.length)].id
-    }
+    const getCardRandomId = (array: CardI[]) => array[getRandomIntenger(0, array.length)].id
 
     const onIKnow = (id: number) => {
         if (arrayCards !== undefined) {
             if (arrayCards.length > 1) {
                 let newArrayCards: CardI[] = []
-                newArrayCards = arrayCards.filter((card) => {
-                    console.log(card.id)
-                    return card.id !== id
-                })
+                newArrayCards = arrayCards.filter((card) => card.id !== id)
 
                 setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
                 setArrayCards(newArrayCards)
@@ -37,7 +32,15 @@ const Learn = (props: LearnProps) => {
     }
 
     const onIDontKnow = () => {
-        setActiveCard(arrayCards[getRandomIntenger(0, arrayCards.length)].id)
+        if (arrayCards.length > 1) {
+            let id = arrayCards[getRandomIntenger(0, arrayCards.length)].id
+
+            while (id === activeCard) {
+                id = arrayCards[getRandomIntenger(0, arrayCards.length)].id
+            }
+
+            setActiveCard(id)
+        }
     }
 
     useEffect(() => {
