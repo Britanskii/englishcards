@@ -69,14 +69,8 @@ export const getStaticProps = async () => {
 
     const arrayCards = await response.json()
 
-    if (!arrayCards) {
-        return {
-            notFound: true
-        }
-    }
-
     return {
-        props: {arrayCards}
+        props: {arrayCards, fallback: false}
     }
 }
 
