@@ -14,7 +14,7 @@ interface LearnProps {
 
 const Learn = (props: LearnProps) => {
 
-    const [arrayCards, setArrayCards] = useState<CardI[]>(props.arrayCards)
+    const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
 
     const getCardRandomId = (array: CardI[]) => {
@@ -41,6 +41,7 @@ const Learn = (props: LearnProps) => {
     }
 
     useEffect(() => {
+        setArrayCards(props.arrayCards)
         setActiveCard(getCardRandomId(props.arrayCards))
     }, [])
 
