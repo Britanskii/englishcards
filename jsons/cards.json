@@ -46,23 +46,23 @@
   {
     "id": 3,
     "word": {
-      "proposal": "Supply",
-      "translated": "Поставка"
+      "proposal": "Describe ",
+      "translated": "Описать"
     },
     "synonymous": {
-      "proposal": "Afford",
-      "translated": "Позволить"
+      "proposal": "Call",
+      "translated": "Звать"
     },
     "antonym": {
-      "proposal": "Debt",
-      "translated": "Долг"
+      "proposal": "conceal",
+      "translated": "Скрыть"
     },
     "examples": [
       {
-        "proposal": "We can <b className ='synonymous'>afford</b> to <b>supply</b> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
-        "translated": "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
+        "proposal": "<b>Describe</b> the fish who <b className ='synonymous'>called</b> you. It has <b className ='antonym'>concealed</b> its appearance",
+        "translated": "<b>Опишите</b> рыбу которая  <b className ='synonymous'>позвонила</b> вам. Она <b className ='antonym'>скрыла</b> свою внешность"
       }
     ],
-    "image": "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
+    "image": "https://i.ytimg.com/vi/8S7DWyxJir4/maxresdefault.jpg"
   }
 ]

@@ -20,10 +20,13 @@ const Learn = (props: LearnProps) => {
 
     const genNewArrayCards = (array: CardI[]) => {
         if (array !== undefined) {
-            const newArrayCards = array.filter((card) => {
+            let newArrayCards: CardI[] = []
+            if (array.length > 1) {
+                newArrayCards = array.filter((card) => {
 
-                return card.id !== pastCard
-            })
+                    return card.id !== pastCard
+                })
+            }
 
             setArrayCards(newArrayCards)
         }
