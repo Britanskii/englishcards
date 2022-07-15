@@ -1,0 +1,2 @@
+//sass
+declare module '*.sass'

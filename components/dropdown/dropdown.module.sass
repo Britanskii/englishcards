@@ -1,0 +1,23 @@
+.dropdown
+	display: flex
+	flex-direction: column
+	gap: 5px
+	&_active
+		display: flex
+	&__text
+		cursor: pointer
+	&__arrow
+		position: absolute
+		left: 2px
+		transition: .3s all ease
+		height: fit-content
+		width: fit-content
+	&__lowerText
+		overflow: hidden
+		background-color: #212121
+
+
+.dropdown_active
+	.dropdown
+		&__arrow
+			transform: rotate(180deg)
