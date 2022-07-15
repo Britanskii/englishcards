@@ -43,7 +43,7 @@ const Learn = (props: LearnProps) => {
     useEffect(() => {
         setArrayCards(props.arrayCards)
         setActiveCard(getCardRandomId(props.arrayCards))
-    }, [])
+    }, [props.arrayCards])
 
     const cards = arrayCards.map((card) => {
 
@@ -65,7 +65,7 @@ const Learn = (props: LearnProps) => {
 }
 
 export const getStaticProps = async () => {
-    const response = await fetch("http://localhost:3000/api/cards")
+    const response = await fetch( `${process.env.API_URL}/api/cards`)
 
     const arrayCards = await response.json()
 
