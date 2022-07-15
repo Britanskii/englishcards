@@ -1,4 +1,4 @@
-import s from "./learn.module.sass"
+import s from "../../styles/learn/learn.module.sass"
 import Card from "../../components/card/Card";
 import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion"
