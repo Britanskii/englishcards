@@ -23,7 +23,7 @@ const Card = ({word, image, antonym, synonymous, examples, activeCard, id, onIKn
 
     const [answer, setAnswer] = useState(false)
     const [activeImg, setActiveImg] = useState(false)
-    const sensitivity = 100
+    const sensitivity = 50
 
     const x = useMotionValue(0)
 
