@@ -5,87 +5,28 @@ import {AnimatePresence, motion} from "framer-motion"
 import {CardI} from "../../interfaces/interfaces";
 import {getRandomIntenger} from "../../functions/randomNumber";
 import LinkNext from "../../components/link/Link";
+import {array} from "prop-types";
 
-const arrayCardsRaw: CardI[] = [
-    {
-        word: {
-            proposal: "career",
-            translated: "Курс"
-        },
-        synonymous: {
-            proposal: "course",
-            translated: "карьера"
-        },
-        antonym: {
-            proposal: "vocation",
-            translated: "призвание"
-        },
-        examples: [
-            {
-                proposal: "The webcam <b>career</b> <b className ='synonymous'>course</b> is my <b className ='antonym'>vocation</b>",
-                translated: "<b className ='synonymous'>Курс</b> по <b>карьере</b> в вебкаме это моё <b className ='antonym'>призвание</b>"
-            }
-        ],
-        image: "https://www.jobgrade.ru/wp-content/uploads/2019/08/к4.jpg"
-    },
-    {
-        word: {
-            proposal: "Supply",
-            translated: "Поставка"
-        },
-        synonymous: {
-            proposal: "Afford",
-            translated: "Позволить"
-        },
-        antonym: {
-            proposal: "Debt",
-            translated: "Долг"
-        },
-        examples: [
-            {
-                proposal: "We can <b className ='synonymous'>afford</b> to <b>supply</b>> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
-                translated: "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
-            }
-        ],
-        image: "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
-    },
-    {
-        word: {
-            proposal: "Supply",
-            translated: "Поставка"
-        },
-        synonymous: {
-            proposal: "Afford",
-            translated: "Позволить"
-        },
-        antonym: {
-            proposal: "Debt",
-            translated: "Долг"
-        },
-        examples: [
-            {
-                proposal: "We can <b className ='synonymous'>afford</b> to <b>supply</b> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
-                translated: "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
-            }
-        ],
-        image: "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
-    }
-]
+interface LearnProps {
+    contacts: any
+    arrayCards: CardI[]
+}
 
-const Index = () => {
+const Learn = (props: LearnProps) => {
 
-    const [arrayCards, setArrayCards] = useState<CardI[]>([])
+    const [arrayCards, setArrayCards] = useState<CardI[]>(props.arrayCards)
     const [activeCard, setActiveCard] = useState(0)
     const [pastCard, setPastCard] = useState<number | null>(null)
 
     const genNewArrayCards = (array: CardI[]) => {
-        const newArrayCards = array.filter((card, id) => {
+        if (array !== undefined) {
+            const newArrayCards = array.filter((card) => {
 
-            return id !== pastCard
-        })
+                return card.id !== pastCard
+            })
 
-
-        setArrayCards(newArrayCards)
+            setArrayCards(newArrayCards)
+        }
     }
 
     useEffect(() => {
@@ -93,13 +34,6 @@ const Index = () => {
 
         genNewArrayCards(arrayCards)
     }, [activeCard])
-
-    useEffect(() => {
-        setArrayCards(arrayCardsRaw)
-
-        genNewArrayCards(arrayCardsRaw)
-    }, [])
-
 
     const cards = arrayCards.map((card, id) => {
 
@@ -120,4 +54,20 @@ const Index = () => {
     )
 }
 
-export default Index
+export const getStaticProps = async () => {
+    const response = await fetch("http://localhost:3000/api/cards")
+
+    const arrayCards = await response.json()
+
+    if (!arrayCards) {
+        return {
+            notFound: true
+        }
+    }
+
+    return {
+        props: {arrayCards}
+    }
+}
+
+export default Learn

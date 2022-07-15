@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "word": {
+      "proposal": "career",
+      "translated": "Курс"
+    },
+    "synonymous": {
+      "proposal": "course",
+      "translated": "карьера"
+    },
+    "antonym": {
+      "proposal": "vocation",
+      "translated": "призвание"
+    },
+    "examples": [
+      {
+        "proposal": "The webcam <b>career</b> <b className ='synonymous'>course</b> is my <b className ='antonym'>vocation</b>",
+        "translated": "<b className ='synonymous'>Курс</b> по <b>карьере</b> в вебкаме это моё <b className ='antonym'>призвание</b>"
+      }
+    ],
+    "image": "https://www.jobgrade.ru/wp-content/uploads/2019/08/к4.jpg"
+  },
+  {
+    "id": 2,
+    "word": {
+      "proposal": "Supply",
+      "translated": "Поставка"
+    },
+    "synonymous": {
+      "proposal": "Afford",
+      "translated": "Позволить"
+    },
+    "antonym": {
+      "proposal": "Debt",
+      "translated": "Долг"
+    },
+    "examples": [
+      {
+        "proposal": "We can <b className ='synonymous'>afford</b> to <b>supply</b>> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
+        "translated": "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
+      }
+    ],
+    "image": "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
+  },
+  {
+    "id": 3,
+    "word": {
+      "proposal": "Supply",
+      "translated": "Поставка"
+    },
+    "synonymous": {
+      "proposal": "Afford",
+      "translated": "Позволить"
+    },
+    "antonym": {
+      "proposal": "Debt",
+      "translated": "Долг"
+    },
+    "examples": [
+      {
+        "proposal": "We can <b className ='synonymous'>afford</b> to <b>supply</b> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
+        "translated": "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
+      }
+    ],
+    "image": "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
+  }
+]

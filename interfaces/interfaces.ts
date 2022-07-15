@@ -19,6 +19,7 @@ export interface ExampleI {
 }
 
 export interface CardI {
+    id: number;
     word: WordI;
     synonymous: SynonymousI;
     antonym: AntonymI;
