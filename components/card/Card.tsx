@@ -41,7 +41,7 @@ const Card = ({
 
     const rotate = useTransform(
         x,
-        [0, 100],
+        [0, 35],
         [0, 5],
         {clamp: false}
     )
@@ -84,6 +84,10 @@ const Card = ({
         <motion.div className={s.card}
                     key={animationKey}
                     drag={"x"}
+                    transition={{
+                        duration: .35,
+                        ease: "easeIn"
+                    }}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     exit={{opacity: 0}}
