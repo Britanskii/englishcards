@@ -48,7 +48,7 @@ const Learn = (props: LearnProps) => {
         setActiveCard(getCardRandomId(props.arrayCards))
     }, [props.arrayCards])
 
-    const cards = arrayCards.map((card) => {
+    const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
         return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
                      synonymous={card.synonymous} examples={card.examples} key={card.id} animationKey={card.id} id={card.id}
@@ -58,7 +58,7 @@ const Learn = (props: LearnProps) => {
     return (
         <div className={s.learn}>
             <AnimatePresence exitBeforeEnter>
-                {cards}
+                {card}
             </AnimatePresence>
             <LinkNext className={`button ${s.learn__back}`} href={"/"}>
                 Назад
