@@ -12,8 +12,8 @@ const MyApp = ({Component, pageProps}: AppProps) => {
                 refetchOnWindowFocus: false,
                 refetchOnMount: false,
                 retry: false,
+                staleTime: 12000
             }
-
         }
     }))
 
