@@ -5,14 +5,22 @@ import {AnimatePresence, motion} from "framer-motion"
 import {CardI} from "../../interfaces/interfaces";
 import {getRandomIntenger} from "../../functions/randomNumber";
 import LinkNext from "../../components/link/Link";
-import {array} from "prop-types";
+import {dehydrate, QueryClient, useQuery} from "react-query";
+import axiosInstance from "../../helpers/axios";
+import axios from "axios";
 
 interface LearnProps {
-    contacts: any
     arrayCards: CardI[]
 }
 
+const getArrayCards = async () => {
+    const response = await axios(`${process.env.API_URL}/api/cards`)
+    return response.data
+}
+
 const Learn = (props: LearnProps) => {
+
+    const { data } = useQuery(['arrayCards'], getArrayCards)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
@@ -44,9 +52,9 @@ const Learn = (props: LearnProps) => {
     }
 
     useEffect(() => {
-        setArrayCards(props.arrayCards)
-        setActiveCard(getCardRandomId(props.arrayCards))
-    }, [props.arrayCards])
+        setArrayCards(data)
+        setActiveCard(getCardRandomId(data))
+    }, [data])
 
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
@@ -68,12 +76,15 @@ const Learn = (props: LearnProps) => {
 }
 
 export const getStaticProps = async () => {
-    const response = await fetch( `${process.env.API_URL}/api/cards`)
 
-    const arrayCards = await response.json()
+    const queryClient = new QueryClient()
+
+    await queryClient.prefetchQuery('arrayCards', getArrayCards)
 
     return {
-        props: {arrayCards, fallback: false}
+        props: {
+            dehydratedState: dehydrate(queryClient),
+        },
     }
 }
 
