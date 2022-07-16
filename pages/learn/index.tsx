@@ -6,7 +6,6 @@ import {CardI} from "../../interfaces/interfaces";
 import {getRandomIntenger} from "../../functions/randomNumber";
 import LinkNext from "../../components/link/Link";
 import {dehydrate, QueryClient, useQuery} from "react-query";
-import axiosInstance from "../../helpers/axios";
 import axios from "axios";
 
 interface LearnProps {
