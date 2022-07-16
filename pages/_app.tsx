@@ -11,7 +11,7 @@ const MyApp = ({Component, pageProps}: AppProps) => {
             queries: {
                 refetchOnWindowFocus: false,
                 refetchOnMount: false,
-                retry: true,
+                retry: false,
             }
 
         }
