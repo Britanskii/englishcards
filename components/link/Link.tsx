@@ -11,7 +11,7 @@ interface LinkNextProps extends LinkProps {
 const LinkNext = ({href, children, className}: LinkNextProps) => {
 
     return (
-        <Link href={href}>
+        <Link href={href} prefetch={false}>
             <a className={className}>
                 {children}
             </a>

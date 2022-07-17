@@ -1,22 +1,18 @@
 import s from "../../styles/learn/learn.module.sass"
-import Card from "../../components/card/Card";
-import {useEffect, useState} from "react";
-import {AnimatePresence, motion} from "framer-motion"
 import {CardI} from "../../interfaces/interfaces";
-import {getRandomIntenger} from "../../functions/randomNumber";
+import {useEffect, useState} from "react";
+import {AnimatePresence} from "framer-motion";
 import LinkNext from "../../components/link/Link";
-import {gql} from "@apollo/client";
+import {getRandomIntenger} from "../../functions/randomNumber";
+import Card from "../../components/card/Card";
 import CardService from "../../services/CardService";
-import {dehydrate, QueryClient, useQuery} from "react-query";
-import {client} from "../_app";
+import data from "../../jsons/cards.json"
 
 interface LearnProps {
     arrayCards: CardI[]
 }
 
 const Learn = (props: LearnProps) => {
-
-    console.log(props)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
@@ -47,6 +43,11 @@ const Learn = (props: LearnProps) => {
         }
     }
 
+    useEffect(() => {
+        setArrayCards(props.arrayCards)
+        setActiveCard(getCardRandomId(props.arrayCards))
+    }, [props.arrayCards])
+
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
         return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
@@ -66,77 +67,15 @@ const Learn = (props: LearnProps) => {
     )
 }
 
-export async function getStaticProps() {
-    const { data } = await client.query({
-        query: gql`
-        query Countries {
-          countries {
-            code
-            name
-            emoji
-          }
-        }
-      `,
-    });
+// ${process.env.API_URL}
+
+export const getStaticProps = async () => {
+
+    // const arrayCards: CardI[] = await CardService.getCards()
 
     return {
-        props: {
-            countries: data.countries.slice(0, 4),
-            fallback: true
-        },
-
-    };
+        props: {arrayCards: data}
+    }
 }
-
-// export const getStaticProps = async () => {
-//     return {
-//         props: {
-//             anime: []
-//         },
-//     }
-// }
-//     const {data} = await client.query({
-//         query: gql`
-//         query Countries {
-//           countries {
-//             code
-//             name
-//             emoji
-//           }
-//         }
-//       `,
-//     });
-//
-//     return {
-//         props: {
-//             countries: data
-//         },
-//     };
-// }
-
-    // const queryClient = new QueryClient({
-    //     defaultOptions: {
-    //         queries: {
-    //             refetchOnWindowFocus: false,
-    //             refetchOnMount: false,
-    //             retry: false,
-    //             staleTime: 12000
-    //         }
-    //     }
-    // })
-    //
-    // await queryClient.prefetchQuery('arrayCards', CardService.getCards)
-
-    // const response = await fetch("http://localhost:3000/api/cards")
-    //
-    // const arrayCards = await response.json()
-    //
-    // return {
-    //     props: {
-    //         dehydratedState: dehydrate(queryClient),
-    //     },
-    // }
-// }
-
 
 export default Learn

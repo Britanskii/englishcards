@@ -1,12 +1,10 @@
-import axios from "axios";
-
 class CardService {
 
     static getCards = async () => {
-        const response = await axios(`${process.env.API_URL}/api/cards`)
-        return response.data
-    }
+        const response = await fetch(`${process.env.API_URL}/api/cards`)
 
+        return await response.json()
+    }
 }
 
 export default CardService
