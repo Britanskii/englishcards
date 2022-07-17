@@ -1,9 +1,8 @@
 import s from "./card.module.sass"
 import Dropdown from "../dropdown/Dropdown";
-import {motion, AnimatePresence, PanInfo, useTransform, useMotionValue} from "framer-motion"
+import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
 import {useState} from "react";
 import {AntonymI, ExampleI, SynonymousI, WordI} from "../../interfaces/interfaces";
-import {getRandomIntenger} from "../../functions/randomNumber";
 
 export interface CardProps {
     activeCard: number,
@@ -25,16 +24,16 @@ const Card = ({
                   antonym,
                   synonymous,
                   examples,
-                  activeCard,
                   id,
                   onIKnow,
                   onIDontKnow,
                   animationKey,
-                  length
               }: CardProps) => {
 
     const [answer, setAnswer] = useState(false)
     const [activeImg, setActiveImg] = useState(false)
+    const [animate, setAnimate] = useState("mount")
+
     const sensitivity = 125
 
     const x = useMotionValue(0)
@@ -72,12 +71,30 @@ const Card = ({
 
         if (x > sensitivity) {
             onIDontKnow()
+            setAnimate("onRight")
         } else if (x < -sensitivity) {
             onIKnow(id)
+            setAnimate("onLeft")
         }
 
         setAnswer(false)
         setActiveImg(false)
+    }
+
+    const variants = {
+        mount: {
+            opacity: 1,
+        },
+        onRight: {
+            opacity: 1,
+            x: 1000,
+            scale: .5
+        },
+        onLeft: {
+            opacity: 1,
+            x: -1000,
+            scale: .5
+        }
     }
 
     return (
@@ -88,8 +105,9 @@ const Card = ({
                         duration: .35,
                         ease: "easeIn"
                     }}
+                    variants={variants}
                     initial={{opacity: 0}}
-                    animate={{opacity: 1}}
+                    animate={animate}
                     exit={{opacity: 0}}
                     dragConstraints={{left: 0, right: 0}}
                     onDragEnd={onDragEnd}
