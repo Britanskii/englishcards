@@ -74,13 +74,15 @@ const Card = ({
         if (x > sensitivity) {
             onIDontKnow()
             setAnimate("onRight")
+            setAnswer(false)
+            setActiveImg(false)
         } else if (x < -sensitivity) {
             onIKnow(id)
             setAnimate("onLeft")
+            setAnswer(false)
+            setActiveImg(false)
         }
 
-        setAnswer(false)
-        setActiveImg(false)
     }
 
     const variants = {
@@ -127,7 +129,8 @@ const Card = ({
             <div className={s.card__line}/>
             <div className={`${s.card__body} ${answer ? s.card__body_active : ""}`}>
                 <div onClick={onAnswer} className={s.card__visible}>
-                    <Image src={eye} className={s.card__eye}/>
+                    ПОСМОТРЕТЬ
+                    {/*<Image src={"/eye.svg"} className={s.card__eye}/>*/}
                 </div>
                 <div className={s.card__answer}>
                     <div className={s.card__capitalize}>{word.translated} — <span

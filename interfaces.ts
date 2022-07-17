@@ -27,5 +27,9 @@ export interface CardI {
     image: string
 }
 
+export interface DictionaryI {
+    title: string,
+    image: string
+}
 
 

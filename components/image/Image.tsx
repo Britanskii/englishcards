@@ -3,14 +3,16 @@ import ImageNext, {StaticImageData} from "next/image"
 
 interface ImageProps {
     src: string | StaticImageData,
-    className: string
+    className?: string,
+    onClick?: () => void,
+    alt?: string
 }
 
-const Image = ({src, className}: ImageProps) => {
+const Image = ({src, className, onClick, alt}: ImageProps) => {
 
     return (
-        <div className={`${s.image} ${className}`}>
-            <ImageNext src={src}/>
+        <div onClick={onClick} className={`${s.image} ${className}`}>
+            <ImageNext width={"100%"} height={"100%"} alt={alt} src={src}/>
         </div>
     )
 }
