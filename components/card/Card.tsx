@@ -2,7 +2,9 @@ import s from "./card.module.sass"
 import Dropdown from "../dropdown/Dropdown";
 import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
 import {useState} from "react";
-import {AntonymI, ExampleI, SynonymousI, WordI} from "../../interfaces/interfaces";
+import {AntonymI, ExampleI, SynonymousI, WordI} from "../../interfaces";
+import Image from "../image/Image";
+import eye from "../../resources/icons/eye.png"
 
 export interface CardProps {
     activeCard: number,
@@ -54,7 +56,7 @@ const Card = ({
     const backgroundYes = useTransform(
         x,
         [-100, 0, 100],
-        ["rgb(24,255,0)", "#7edc73", "#7edc73"]
+        ["#18FF00", "#7edc73", "#7edc73"]
     )
 
     const onToggleActiveImg = () => {
@@ -125,7 +127,7 @@ const Card = ({
             <div className={s.card__line}/>
             <div className={`${s.card__body} ${answer ? s.card__body_active : ""}`}>
                 <div onClick={onAnswer} className={s.card__visible}>
-                    Посмотреть
+                    <Image src={eye} className={s.card__eye}/>
                 </div>
                 <div className={s.card__answer}>
                     <div className={s.card__capitalize}>{word.translated} — <span
