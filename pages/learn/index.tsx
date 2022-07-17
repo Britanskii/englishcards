@@ -5,21 +5,18 @@ import {AnimatePresence, motion} from "framer-motion"
 import {CardI} from "../../interfaces/interfaces";
 import {getRandomIntenger} from "../../functions/randomNumber";
 import LinkNext from "../../components/link/Link";
+import {gql} from "@apollo/client";
+import CardService from "../../services/CardService";
 import {dehydrate, QueryClient, useQuery} from "react-query";
-import axios from "axios";
+import {client} from "../_app";
 
 interface LearnProps {
     arrayCards: CardI[]
 }
 
-const getArrayCards = async () => {
-    const response = await axios(`${process.env.API_URL}/api/cards`)
-    return response.data
-}
-
 const Learn = (props: LearnProps) => {
 
-    const { data } = useQuery(['arrayCards'], getArrayCards)
+    console.log(props)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
@@ -50,11 +47,6 @@ const Learn = (props: LearnProps) => {
         }
     }
 
-    useEffect(() => {
-        setArrayCards(data)
-        setActiveCard(getCardRandomId(data))
-    }, [data])
-
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
         return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
@@ -74,17 +66,77 @@ const Learn = (props: LearnProps) => {
     )
 }
 
-export const getStaticProps = async () => {
-
-    const queryClient = new QueryClient()
-
-    await queryClient.prefetchQuery('arrayCards', getArrayCards)
+export async function getStaticProps() {
+    const { data } = await client.query({
+        query: gql`
+        query Countries {
+          countries {
+            code
+            name
+            emoji
+          }
+        }
+      `,
+    });
 
     return {
         props: {
-            dehydratedState: dehydrate(queryClient),
+            countries: data.countries.slice(0, 4),
+            fallback: true
         },
-    }
+
+    };
 }
+
+// export const getStaticProps = async () => {
+//     return {
+//         props: {
+//             anime: []
+//         },
+//     }
+// }
+//     const {data} = await client.query({
+//         query: gql`
+//         query Countries {
+//           countries {
+//             code
+//             name
+//             emoji
+//           }
+//         }
+//       `,
+//     });
+//
+//     return {
+//         props: {
+//             countries: data
+//         },
+//     };
+// }
+
+    // const queryClient = new QueryClient({
+    //     defaultOptions: {
+    //         queries: {
+    //             refetchOnWindowFocus: false,
+    //             refetchOnMount: false,
+    //             retry: false,
+    //             staleTime: 12000
+    //         }
+    //     }
+    // })
+    //
+    // await queryClient.prefetchQuery('arrayCards', CardService.getCards)
+
+    // const response = await fetch("http://localhost:3000/api/cards")
+    //
+    // const arrayCards = await response.json()
+    //
+    // return {
+    //     props: {
+    //         dehydratedState: dehydrate(queryClient),
+    //     },
+    // }
+// }
+
 
 export default Learn
