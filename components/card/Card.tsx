@@ -2,7 +2,7 @@ import s from "./card.module.sass"
 import Dropdown from "../dropdown/Dropdown";
 import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
 import {useState} from "react";
-import {AntonymI, ExampleI, SynonymousI, WordI} from "../../interfaces";
+import {AntonymI, CardI, ExampleI, SynonymousI, WordI} from "../../interfaces";
 import Image from "../image/Image";
 import eye from "../../resources/icons/eye.png"
 
@@ -17,7 +17,8 @@ export interface CardProps {
     antonym: AntonymI
     synonymous: SynonymousI
     image: string
-    examples: ExampleI[]
+    examples: ExampleI[],
+    arrayCards: CardI[]
 }
 
 const Card = ({
@@ -30,6 +31,7 @@ const Card = ({
                   onIKnow,
                   onIDontKnow,
                   animationKey,
+                  arrayCards
               }: CardProps) => {
 
     const [answer, setAnswer] = useState(false)
@@ -72,10 +74,12 @@ const Card = ({
         const x = info.offset.x
 
         if (x > sensitivity) {
-            onIDontKnow()
-            setAnimate("onRight")
-            setAnswer(false)
-            setActiveImg(false)
+            if (arrayCards.length > 1) {
+                onIDontKnow()
+                setAnimate("onRight")
+                setAnswer(false)
+                setActiveImg(false)
+            }
         } else if (x < -sensitivity) {
             onIKnow(id)
             setAnimate("onLeft")

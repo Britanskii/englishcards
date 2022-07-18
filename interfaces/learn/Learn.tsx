@@ -69,7 +69,7 @@ const Learn = (props: LearnProps) => {
 
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
-        return <Card image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
+        return <Card arrayCards = {arrayCards} image={card.image} length={arrayCards.length} word={card.word} antonym={card.antonym}
                      synonymous={card.synonymous} examples={card.examples} key={card.id} animationKey={card.id}
                      id={card.id}
                      activeCard={activeCard} onIKnow={onIKnow} onIDontKnow={onIDontKnow}/>
