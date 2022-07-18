@@ -1,8 +1,6 @@
 import type {NextPage} from 'next'
 import s from "../styles/index.module.sass"
 import Start from "../interfaces/start/Start"
-import Link from "next/link";
-import LinkNext from "../components/link/Link";
 
 const Home: NextPage = () => {
 

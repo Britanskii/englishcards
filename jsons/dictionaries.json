@@ -1,14 +1,177 @@
 [
   {
+    "id": 1,
     "title": "25 слов уровня A1 (часть 1)",
-    "image": "/eye.svg"
+    "image": "/eye.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "career",
+          "translated": "Курс"
+        },
+        "synonymous": {
+          "proposal": "course",
+          "translated": "карьера"
+        },
+        "antonym": {
+          "proposal": "vocation",
+          "translated": "призвание"
+        },
+        "examples": [
+          {
+            "proposal": "The webcam <b>career</b> <b className ='synonymous'>course</b> is my <b className ='antonym'>vocation</b>",
+            "translated": "<b className ='synonymous'>Курс</b> по <b>карьере</b> в вебкаме это моё <b className ='antonym'>призвание</b>"
+          }
+        ],
+        "image": "https://www.jobgrade.ru/wp-content/uploads/2019/08/к4.jpg"
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "Supply",
+          "translated": "Поставка"
+        },
+        "synonymous": {
+          "proposal": "Afford",
+          "translated": "Позволить"
+        },
+        "antonym": {
+          "proposal": "Debt",
+          "translated": "Долг"
+        },
+        "examples": [
+          {
+            "proposal": "We can <b className ='synonymous'>afford</b> to <b>supply</b> new gachi-belts, but then we would be in <b className ='antonym'>debt</b>",
+            "translated": "Мы можем <b className ='synonymous'>позволить</b> себе <b>поставки</b> новых гачи-ремней, но тогда мы будем в <b className ='antonym'>долгах</b>"
+          }
+        ],
+        "image": "https://i.pinimg.com/originals/c0/2e/e5/c02ee500b8ac33c72b30be1f7578716b.jpg"
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "Describe ",
+          "translated": "Описать"
+        },
+        "synonymous": {
+          "proposal": "Call",
+          "translated": "Звать"
+        },
+        "antonym": {
+          "proposal": "conceal",
+          "translated": "Скрыть"
+        },
+        "examples": [
+          {
+            "proposal": "<b>Describe</b> the fish who <b className ='synonymous'>called</b> you. It has <b className ='antonym'>concealed</b> its appearance",
+            "translated": "<b>Опишите</b> рыбу которая  <b className ='synonymous'>позвонила</b> вам. Она <b className ='antonym'>скрыла</b> свою внешность"
+          }
+        ],
+        "image": "https://i.ytimg.com/vi/8S7DWyxJir4/maxresdefault.jpg"
+      }
+    ]
   },
   {
+    "id": 2,
     "title": "25 слов уровня A1 (часть 2)",
-    "image": "/book.svg"
+    "image": "/book.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "Climb",
+          "translated": "Подниматься"
+        },
+        "synonymous": {
+          "proposal": "soar",
+          "translated": "Взлетать"
+        },
+        "antonym": {
+          "proposal": "Descent",
+          "translated": "спуститься"
+        },
+        "examples": [
+          {
+            "proposal": "The rocket <b>soared</b> into the air while I was <b className ='synonymous'>climbing</b> up it, but then I had to <b className ='antonym'>descent</b>.",
+            "translated": "Ракета <b>взмыла</b> в воздух, пока я <b className ='synonymous'>поднимался</b> на нее, но потом мне пришлось <b className ='antonym'>спуститься</b>."
+          }
+        ],
+        "image": "https://www.fnarena.com/wp-content/uploads/2019/05/Businessman-flying-on-rocket-i-168554321.jpg"
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "above",
+          "translated": "Сверху"
+        },
+        "synonymous": {
+          "proposal": "Beyond",
+          "translated": "За пределами"
+        },
+        "antonym": {
+          "proposal": "Underneath",
+          "translated": "Под"
+        },
+        "examples": [
+          {
+            "proposal": "The cars looked like Constantine from <b>above</b>. <b className ='synonymous'>Beyond</b> the front page of the browser. <b className ='antonym'>Underneath</b> the boat is marijuana",
+            "translated": " <b>Сверху</b> машины выглядили как Константин. <b className ='synonymous'>За пределами</b> первой страницы браузера. <b className ='antonym'>Под</b> лодкой лежала марихуана"
+          }
+        ],
+        "image": "http://paranormal-news.ru/_nw/165/75523894.jpg"
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "above",
+          "translated": "Сверху"
+        },
+        "synonymous": {
+          "proposal": "Beyond",
+          "translated": "За пределами"
+        },
+        "antonym": {
+          "proposal": "Underneath",
+          "translated": "Под"
+        },
+        "examples": [
+          {
+            "proposal": "I <b>attend</b> AA meetings every day. I <b className ='synonymous'>accompany</b> you. People did not <b className ='antonym'>abandon</b> their houses despite the tajiks.",
+            "translated": " <b>Сверху</b> машины выглядили как Константин. <b className ='synonymous'>За пределами</b> первой страницы браузера. <b className ='antonym'>Под</b> лодкой лежала марихуана"
+          }
+        ],
+        "image": "https://aannov.ru/wp-content/uploads/2019/11/01f9eb905a39896fca35f6a0c46e9814.jpeg"
+      }
+    ]
   },
   {
+    "id": 3,
     "title": "25 слов уровня A1 (часть 3)",
-    "image": "/gun.svg"
+    "image": "/gun.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "To bear",
+          "translated": "Вынести"
+        },
+        "synonymous": {
+          "proposal": "Abide",
+          "translated": "Переносить"
+        },
+        "antonym": {
+          "proposal": "shun",
+          "translated": "Отвергнуть"
+        },
+        "examples": [
+          {
+            "proposal": "The pain from the spilled coffee was almost more than he could <b>bear</b>. I can't <b className ='synonymous'>abide</b> people with no sense of humour. They were both <b className ='antonym'>shunned</b> by their families when they remarried.",
+            "translated": "Боль от пролитого кофе была почти сильнее, чем он мог <b>вынести</b>. Я не <b className ='synonymous'>выношу</b> людей без чувства юмора. Они оба были <b className ='antonym'>отвергнуты</b> своими семьями, когда снова женились."
+          }
+        ],
+        "image": "https://kartinkin.net/uploads/posts/2022-03/1646743336_1-kartinkin-net-p-kartinki-grust-odinochestvo-bol-1.jpg"
+      }
+    ]
   }
 ]

@@ -1,5 +1,5 @@
 import s from "./complete.module.sass"
-import Link from "../../../components/link/Link";
+import {Link} from "../../../components/link/Link";
 import mark from "../../../resources/icons/mark.svg"
 import Image from "../../../components/image/Image";
 import {motion} from "framer-motion";
