@@ -1,3 +1,5 @@
+@import "../../constants/constants"
+
 .dropdown
 	display: flex
 	flex-direction: column
@@ -6,6 +8,8 @@
 		display: flex
 	&__text
 		cursor: pointer
+		padding: 0 16px
+
 	&__arrow
 		position: absolute
 		left: 2px
@@ -13,8 +17,10 @@
 		height: fit-content
 		width: fit-content
 	&__lowerText
+		padding: 10px 16px
 		overflow: hidden
-		background-color: #212121
+		background-color: $background
+		box-shadow:  0 0 10px black inset
 
 
 .dropdown_active
