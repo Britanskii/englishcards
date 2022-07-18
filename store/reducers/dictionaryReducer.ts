@@ -1,16 +1,19 @@
-import {SET_PAGE} from "../constants";
+import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/types";
 
 const defaultState = {
-    page: 2
+    page: 0,
+    dictionary: []
 }
 
-const reducerDictionary = (state = defaultState, action) => {
+const dictionaryReducer = (state = defaultState, action: DictionaryAction): DictionaryState => {
     switch (action.type) {
-        case SET_PAGE:
+        case DictionaryActions.SET_PAGE:
             return {...state, page: action.payload}
+        case DictionaryActions.SET_DICTIONARY:
+            return {...state, dictionary: action.payload}
         default:
             return state
     }
 }
 
-export default reducerDictionary
+export default dictionaryReducer

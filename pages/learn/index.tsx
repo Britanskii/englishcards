@@ -9,15 +9,11 @@ interface LearnProps {
 const Index = (props: LearnProps) => {
 
     return (
-        <Learn arrayCards={props.arrayCards}/>
+        <Learn id = {false} arrayCards={props.arrayCards}/>
     )
 }
 
-// ${process.env.API_URL}
-
 export const getStaticProps = async () => {
-
-    // const arrayCards: CardI[] = await CardService.getCards()
 
     return {
         props: {arrayCards: data}

@@ -10,18 +10,21 @@ interface LearnProps {
 
 const LearnById = (props: LearnProps) => {
 
-    return <Learn arrayCards={props.arrayCards}/>
+    return (
+        <Learn id = {true} arrayCards={props.arrayCards}/>
+    )
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const id = context.params?.id
 
-    // console.log(data[0])
+    const id: string | string[] | undefined = context.params?.id
 
+    let arrayCards: CardI[] = []
 
-
-    // @ts-ignore
-    const arrayCards = data[id - 1].dictionary
+    if (id !== undefined) {
+        // @ts-ignore
+        arrayCards = data[id - 1].dictionary
+    }
 
     return {
         props: {arrayCards}
@@ -29,8 +32,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-
-    // const arrayCards: CardI[] = await CardService.getCards()
 
     const paths = data.map(dictionary => {
         return {
@@ -41,7 +42,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return {
         paths,
         fallback: false
-        // props: {arrayCards: data}
     }
 }
 

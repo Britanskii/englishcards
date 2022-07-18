@@ -6,12 +6,19 @@ import Progress from "../../components/progress/Progress"
 import {getRandomIntenger} from "../../functions/randomNumber";
 import Card from "../../components/card/Card";
 import Complete from "./complete/Complete";
+import useTypedSelector from "../../hooks/useTypedSelector";
+import useActions from "../../hooks/useActions";
 
 interface LearnProps {
+    id: boolean
     arrayCards: CardI[]
 }
 
 const Learn = (props: LearnProps) => {
+
+    const {setDictionary} = useActions()
+
+    const dictionary = useTypedSelector(state => state.dictionary)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [activeCard, setActiveCard] = useState(0)
@@ -26,6 +33,7 @@ const Learn = (props: LearnProps) => {
 
 
             if (newArrayCards.length > 0) setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
+            setDictionary(newArrayCards)
             setArrayCards(newArrayCards)
             if (newArrayCards.length === 0) setIsAll(true)
         }
@@ -44,9 +52,20 @@ const Learn = (props: LearnProps) => {
     }
 
     useEffect(() => {
-        setArrayCards(props.arrayCards)
-        setActiveCard(getCardRandomId(props.arrayCards))
-    }, [props.arrayCards])
+        if (props.id) {
+            setDictionary(props.arrayCards)
+            setArrayCards(props.arrayCards)
+            setActiveCard(getCardRandomId(props.arrayCards))
+        } else {
+            setArrayCards(dictionary)
+            if (dictionary.length > 0) {
+                setActiveCard(getCardRandomId(dictionary))
+            } else {
+                setIsAll(true)
+            }
+        }
+
+    }, [])
 
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
 
