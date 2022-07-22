@@ -1,48 +1,46 @@
 import s from "./generator.module.sass"
-import {ChangeEventHandler, Dispatch, SetStateAction, useEffect, useState} from "react";
+import {ChangeEventHandler, Dispatch, SetStateAction, useEffect, useState} from "react"
 
 const Generator = () => {
 
-    const [image, setImage] = useState('')
+    const [image, setImage] = useState("")
 
-    const [word, setWord] = useState('')
-    const [antonym, setAntonym] = useState('')
-    const [synonymous, setSynonymous] = useState('')
-    const [text, setText] = useState('')
+    const [word, setWord] = useState("")
+    const [antonym, setAntonym] = useState("")
+    const [synonymous, setSynonymous] = useState("")
+    const [text, setText] = useState("")
 
-    const [wordTranslated, setWordTranslated] = useState('')
-    const [antonymTranslated, setAntonymTranslated] = useState('')
-    const [synonymousTranslated, setSynonymousTranslated] = useState('')
-    const [textTranslated, setTextTranslated] = useState('')
+    const [wordTranslated, setWordTranslated] = useState("")
+    const [antonymTranslated, setAntonymTranslated] = useState("")
+    const [synonymousTranslated, setSynonymousTranslated] = useState("")
+    const [textTranslated, setTextTranslated] = useState("")
 
-    const [result, setResult] = useState('')
+    const [result, setResult] = useState("")
 
     const genWordObject = () => {
 
         const parseText = (text: string) => {
             let start = true
 
-            const parsed = text.split('').map((letter) => {
+            return text.split("").map((letter) => {
                 if (letter === "*" || letter === "+" || letter === "-") {
                     if (start) {
                         start = false
                         if (letter === "*") {
-                            return `<b>`
+                            return "<b>"
                         } else if (letter === "+") {
-                            return `<b className ='synonymous'>`
+                            return "<b className ='synonymous'>"
                         } else if (letter === "-") {
-                            return `<b className ='antonym'>`
+                            return "<b className ='antonym'>"
                         }
                     } else {
                         start = true
-                        return `</b>`
+                        return "</b>"
                     }
                 } else {
                     return letter
                 }
-            }).join('')
-
-            return parsed
+            }).join("")
         }
 
         const textParsed = parseText(text)

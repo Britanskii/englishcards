@@ -1,4 +1,4 @@
-import type {NextPage} from 'next'
+import type {NextPage} from "next"
 import s from "../styles/index.module.sass"
 import Start from "../interfaces/start/Start"
 

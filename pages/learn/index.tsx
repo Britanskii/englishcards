@@ -1,6 +1,6 @@
-import {CardI} from "../../interfaces";
+import {CardI} from "../../interfaces"
 import data from "../../jsons/cards.json"
-import Learn from "../../interfaces/learn/Learn";
+import Learn from "../../interfaces/learn/Learn"
 
 interface LearnProps {
     arrayCards: CardI[]

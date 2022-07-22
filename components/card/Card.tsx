@@ -1,8 +1,9 @@
 import s from "./card.module.sass"
-import Dropdown from "../dropdown/Dropdown";
+import Dropdown from "../dropdown/Dropdown"
 import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
-import {useState} from "react";
-import {AntonymI, CardI, ExampleI, SynonymousI, WordI} from "../../interfaces";
+import {useState} from "react"
+import {AntonymI, CardI, ExampleI, SynonymousI, WordI} from "../../interfaces"
+import {variants} from "../../animtaion/card"
 
 export interface CardProps {
     activeCard: number,
@@ -31,7 +32,6 @@ const Card = ({
                   animationKey,
                   arrayCards
               }: CardProps) => {
-
     const [answer, setAnswer] = useState(false)
     const [activeImg, setActiveImg] = useState(false)
     const [animate, setAnimate] = useState("mount")
@@ -84,23 +84,6 @@ const Card = ({
             setAnswer(false)
             setActiveImg(false)
         }
-
-    }
-
-    const variants = {
-        mount: {
-            opacity: 1,
-        },
-        onRight: {
-            opacity: 1,
-            x: 1000,
-            scale: .5
-        },
-        onLeft: {
-            opacity: 1,
-            x: -1000,
-            scale: .5
-        }
     }
 
     return (
@@ -108,7 +91,7 @@ const Card = ({
                     key={animationKey}
                     drag={"x"}
                     transition={{
-                        duration: .35,
+                        duration: 0.35,
                         ease: "easeIn"
                     }}
                     variants={variants}
@@ -124,20 +107,38 @@ const Card = ({
                      className={`${s.card__img} ${activeImg ? "" : s.card__img_disabled}`}
                      src={image} alt={word.proposal}/>
                 <div className={s.card__word}>
-                    {word.proposal} — <span className={s.card__synonymous}>{synonymous.proposal}</span> — <span
-                    className={s.card__antonym}>{antonym.proposal}</span>
+                    {word.proposal}
+                    {synonymous.proposal &&
+					<>
+						<span> — </span>
+						<span className={s.card__synonymous}>
+                            {synonymous.proposal}
+                        </span>
+					</>}
+                    {antonym.proposal &&
+					<>
+						<span> — </span>
+						<span className={s.card__antonym}>
+                            {antonym.proposal}
+                        </span>
+					</>}
                 </div>
             </div>
             <div className={s.card__line}/>
             <div className={`${s.card__body} ${answer ? s.card__body_active : ""}`}>
                 <div onClick={onAnswer} className={s.card__visible}>
                     ПОСМОТРЕТЬ
-                    {/*<Image src={"/eye.svg"} className={s.card__eye}/>*/}
+                    {/* <Image src={"/eye.svg"} className={s.card__eye}/> */}
                 </div>
                 <div className={s.card__answer}>
-                    <div className={s.card__capitalize}>{word.translated} — <span
-                        className="synonymous">{synonymous.translated}</span> — <span
-                        className="antonym">{antonym.translated}</span></div>
+                    <div className={s.card__capitalize}>{word.translated}
+                        {synonymous.translated &&
+						<>
+							— <span
+							className="synonymous">{synonymous.translated}</span>
+						</>}
+                        — <span
+                            className="antonym">{antonym.translated}</span></div>
                     <div className={s.card__examples}>
                         {examples.map((example, id) => {
                             return <Dropdown

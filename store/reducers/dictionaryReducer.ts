@@ -1,4 +1,4 @@
-import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/types";
+import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/types"
 
 const defaultState = {
     page: 0,

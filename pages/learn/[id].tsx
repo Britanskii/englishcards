@@ -1,7 +1,7 @@
 import s from "./learn.module.sass"
-import data from "../../jsons/dictionaries.json";
-import {CardI} from "../../interfaces";
-import Learn from "../../interfaces/learn/Learn";
+import data from "../../jsons/dictionaries.json"
+import {CardI} from "../../interfaces"
+import Learn from "../../interfaces/learn/Learn"
 import {GetStaticProps, GetStaticPaths } from "next"
 
 interface LearnProps {
@@ -22,6 +22,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     let arrayCards: CardI[] = []
 
     if (id !== undefined) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         arrayCards = data[id - 1].dictionary
     }

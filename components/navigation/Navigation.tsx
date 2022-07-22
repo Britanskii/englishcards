@@ -1,6 +1,5 @@
 import s from "./navigation.module.sass"
-import Link from "../link/Link";
-import {setDictionaryId} from "../../store/actionCreators/dictionary";
+import Link from "../link/Link"
 
 const Navigation = () => {
 

@@ -1,6 +1,6 @@
 import s from "./clothes.module.sass"
-import {ReactNode} from "react";
-import Navigation from "../navigation/Navigation";
+import {ReactNode} from "react"
+import Navigation from "../navigation/Navigation"
 
 interface ClothesProps {
     children: ReactNode

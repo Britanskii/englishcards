@@ -1,6 +1,6 @@
 import s from "./progress.module.sass"
 
-import {motion} from "framer-motion";
+import {motion} from "framer-motion"
 
 interface ProgressProps {
     to: number,

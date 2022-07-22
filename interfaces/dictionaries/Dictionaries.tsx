@@ -1,9 +1,9 @@
 import s from "./dictionaries.module.sass"
 import Image from "../../components/image/Image"
 import data from "../../jsons/dictionaries.json"
-import {motion} from "framer-motion";
-import Link from "../../components/link/Link";
-import useActions from "../../hooks/useActions";
+import {motion} from "framer-motion"
+import Link from "../../components/link/Link"
+import useActions from "../../hooks/useActions"
 
 const Dictionaries = () => {
 

@@ -1,4 +1,4 @@
-import {CardI} from "../../interfaces";
+import {CardI} from "../../interfaces"
 
 export enum DictionaryActions {
     SET_PAGE = "SET_PAGE",

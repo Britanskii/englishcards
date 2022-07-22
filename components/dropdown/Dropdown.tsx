@@ -1,6 +1,6 @@
 import s from "./dropdown.module.sass"
 import {AnimatePresence, motion} from "framer-motion"
-import React, {useEffect, useRef, useState} from "react"
+import React, {useState} from "react"
 import parse from "html-react-parser"
 
 interface dropdownProps {
@@ -29,7 +29,7 @@ const Dropdown = ({className, text, lowerText}: dropdownProps) => {
                 isActive &&
                 <motion.div
                     className={`${s.dropdown__lowerText}`}
-                            style = {{overflow: 'hidden'}}
+                            style = {{overflow: "hidden"}}
                             key="content"
                             initial="collapsed"
                             animate="open"

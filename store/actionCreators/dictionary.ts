@@ -1,7 +1,6 @@
-import {DictionaryActions, DictionaryAction} from "../types/types";
-import {Action, Dispatch} from "redux";
-import {log} from "util";
-import {CardI} from "../../interfaces";
+import {DictionaryActions, DictionaryAction} from "../types/types"
+import {Dispatch} from "redux"
+import {CardI} from "../../interfaces"
 
 
 export const setDictionaryId = (id: number) => {

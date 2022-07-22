@@ -1,14 +1,13 @@
 import s from "./learn.module.sass"
-import {CardI} from "../../interfaces";
-import {useEffect, useState} from "react";
-import {AnimatePresence} from "framer-motion";
+import {CardI} from "../../interfaces"
+import {useEffect, useState} from "react"
+import {AnimatePresence} from "framer-motion"
 import Progress from "../../components/progress/Progress"
-import {getRandomIntenger} from "../../functions/randomNumber";
-import Card from "../../components/card/Card";
-import Complete from "./complete/Complete";
-import useTypedSelector from "../../hooks/useTypedSelector";
-import useActions from "../../hooks/useActions";
-import Dropdown from "../../components/dropdown/Dropdown";
+import {getRandomIntenger} from "../../functions/randomNumber"
+import Card from "../../components/card/Card"
+import Complete from "./complete/Complete"
+import useTypedSelector from "../../hooks/useTypedSelector"
+import useActions from "../../hooks/useActions"
 
 interface LearnProps {
     id: boolean
@@ -29,8 +28,7 @@ const Learn = (props: LearnProps) => {
 
     const onIKnow = (id: number) => {
         if (arrayCards !== undefined) {
-            let newArrayCards: CardI[]
-            newArrayCards = arrayCards.filter((card) => card.id !== id)
+            const newArrayCards = arrayCards.filter((card) => card.id !== id)
 
 
             if (newArrayCards.length > 0) setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
