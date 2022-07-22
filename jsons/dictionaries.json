@@ -69,16 +69,9 @@
           }
         ],
         "image": "https://i.ytimg.com/vi/8S7DWyxJir4/maxresdefault.jpg"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "25 слов уровня A1 (часть 2)",
-    "image": "/book.svg",
-    "dictionary": [
+      },
       {
-        "id": 0,
+        "id": 3,
         "word": {
           "proposal": "Climb",
           "translated": "Подниматься"
@@ -100,7 +93,7 @@
         "image": "https://www.fnarena.com/wp-content/uploads/2019/05/Businessman-flying-on-rocket-i-168554321.jpg"
       },
       {
-        "id": 1,
+        "id": 4,
         "word": {
           "proposal": "above",
           "translated": "Сверху"
@@ -122,7 +115,7 @@
         "image": "http://paranormal-news.ru/_nw/165/75523894.jpg"
       },
       {
-        "id": 2,
+        "id": 5,
         "word": {
           "proposal": "above",
           "translated": "Сверху"
@@ -142,16 +135,9 @@
           }
         ],
         "image": "https://aannov.ru/wp-content/uploads/2019/11/01f9eb905a39896fca35f6a0c46e9814.jpeg"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "25 слов уровня A1 (часть 3)",
-    "image": "/gun.svg",
-    "dictionary": [
+      },
       {
-        "id": 0,
+        "id": 6,
         "word": {
           "proposal": "To bear",
           "translated": "Вынести"
@@ -172,6 +158,352 @@
         ],
         "image": "https://kartinkin.net/uploads/posts/2022-03/1646743336_1-kartinkin-net-p-kartinki-grust-odinochestvo-bol-1.jpg"
       }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "15 неправильных глаголов",
+    "image": "/book.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "be",
+          "translated": "Быть, находиться"
+        },
+        "synonymous": {
+          "proposal": "was/were",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "been",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "I <b className ='synonymous'>was</b> there. We <b className ='synonymous'>were</b> there. I have <b className ='antonym'>been</b> there.",
+            "translated": "Я <b className ='synonymous'>был</b> там. Мы <b className ='synonymous'>были</b> там. Я уже <b className ='antonym'>был</b> там."
+          }
+        ],
+        "image": "https://s.poembook.ru/theme/f6/cf/83/dbbdb99c36b125fbf3411c352285ff5d67f95a57.jpeg"
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "beat",
+          "translated": "Бить, ударить"
+        },
+        "synonymous": {
+          "proposal": "beat",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "beaten",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": "https://static.mk.ru/upload/entities/2019/03/26/20/articles/facebookPicture/d3/60/dd/1a/e374d2ec4ffa69ac2699bff491fd7b9c.jpg"
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "become",
+          "translated": "Становиться"
+        },
+        "synonymous": {
+          "proposal": "became",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "become",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>becoming</b> a father",
+            "translated": "<b>становиться</b> отцом"
+          }
+        ],
+        "image": "https://i.pinimg.com/originals/1e/73/a9/1e73a9dfd1ca137424f2a70c870e093a.jpg"
+      },
+      {
+        "id": 3,
+        "word": {
+          "proposal": "begin",
+          "translated": "Начинать"
+        },
+        "synonymous": {
+          "proposal": "began",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "begun",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "The show <b>begins</b>",
+            "translated": "Шоу <b>начинается</b>"
+          }
+        ],
+        "image": "https://see-aych.com/2000s-movies/wp-content/uploads/2017/09/showtime-2002.jpg"
+      },
+
+      {
+        "id": 4,
+        "word": {
+          "proposal": "bite",
+          "translated": "Начинать"
+        },
+        "synonymous": {
+          "proposal": "bit",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "bitten",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "It <b>bit</b> me!",
+            "translated": "Оно <b>укусило</b> меня!"
+          }
+        ],
+        "image": "https://glorypets.ru/wp-content/uploads/2020/06/1-Ukus.jpg"
+      },
+      {
+        "id": 5,
+        "word": {
+          "proposal": "blow",
+          "translated": "Начинать"
+        },
+        "synonymous": {
+          "proposal": "blew",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "blown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Blow</b> on a bruise",
+            "translated": "<b>Дуть</b> на ушиб"
+          }
+        ],
+        "image": "https://glagol.press/wp-content/uploads/2021/09/it-will-hurt-nice-young-mother-blowing-scratch-while-trying-help-her-daughter.jpg"
+      },
+      {
+        "id": 6,
+        "word": {
+          "proposal": "break",
+          "translated": "Ломать"
+        },
+        "synonymous": {
+          "proposal": "broke",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "broken",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Breaking</b> Life",
+            "translated": "<b>Ломать</b> жизнь"
+          }
+        ],
+        "image": "https://pokatim.ru/uploads/posts/2020-09/1600256145_yfcjrxnyxut6n5n5r1hr5fltrcke1fz8wh2sd1gw.jpeg"
+      },
+      {
+        "id": 7,
+        "word": {
+          "proposal": "bring",
+          "translated": "Приносить"
+        },
+        "synonymous": {
+          "proposal": "brought",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "brought",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "To <b>bring</b> food",
+            "translated": "<b>Приносить</b> еду"
+          }
+        ],
+        "image": "https://www.rangersdog.com/wp-content/uploads/2021/08/8-Tips-On-Switching-Your-Dogs-Diet-scaled.jpeg"
+      },
+      {
+        "id": 8,
+        "word": {
+          "proposal": "build",
+          "translated": "Приносить"
+        },
+        "synonymous": {
+          "proposal": "built",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "built",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Building</b> a life",
+            "translated": "<b>Строить</b> жизнь"
+          }
+        ],
+        "image": "https://absolutera.ru/uploads/article/logo/7216/______614197_prikol_yumor_stremyanka_lestitsa_oboi_mujik_chelov_2200x1650_www.Gde-Fon.com.jpg"
+      },
+
+      {
+        "id": 9,
+        "word": {
+          "proposal": "burn",
+          "translated": "Гореть, обжигать, жечь"
+        },
+        "synonymous": {
+          "proposal": "burnt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "burnt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Burn</b> everything with holy fire",
+            "translated": "<b>Сжечь</b> всё священным огнём"
+          }
+        ],
+        "image": "https://don24.ru/uploads/2018/Апрель/Культура/огонь-5ac72655b8a19.jpg"
+      },
+      {
+        "id": 10,
+        "word": {
+          "proposal": "buy",
+          "translated": "Покупать"
+        },
+        "synonymous": {
+          "proposal": "bought",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "bought",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "I <b className ='synonymous'>bought</b> her.",
+            "translated": "Я <b className ='synonymous'>купил</b> её."
+          }
+        ],
+        "image": "https://don24.ru/uploads/2018/Апрель/Культура/огонь-5ac72655b8a19.jpg"
+      },
+      {
+        "id": 11,
+        "word": {
+          "proposal": "can",
+          "translated": "Мочь, уметь"
+        },
+        "synonymous": {
+          "proposal": "could",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "I <b>can't</b> do that.",
+            "translated": "Я не <b>могу</b> это сделать"
+          }
+        ],
+        "image": "https://infostart.ru/upload/iblock/218/21803ed90ebd29de86f61296d39bafab.jpg"
+      },
+      {
+        "id": 12,
+        "word": {
+          "proposal": "catch",
+          "translated": "Ловить, хватать"
+        },
+        "synonymous": {
+          "proposal": "caught",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "caught",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Catch</b> a thought",
+            "translated": "<b>Ловить</b> мысль"
+          }
+        ],
+        "image": "https://avatars.mds.yandex.net/get-zen_doc/2480061/pub_5fa06bf86f1ecc136fefc0e1_5fa06c7d01bdcc4833b9fb74/scale_1200"
+      },
+      {
+        "id": 13,
+        "word": {
+          "proposal": "choose",
+          "translated": "Выбирать"
+        },
+        "synonymous": {
+          "proposal": "chose",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "chosen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "In life, you have to <b>choose</b>, not try to be <b>chosen</b>",
+            "translated": "В жизни нужно <b>выбирать</b>, а не пытаться быть <b>выбранным</b>"
+          }
+        ],
+        "image": "https://econet.ru/media/10/kindeditor/image/201404/20140419100914.jpg"
+      },
+      {
+        "id": 14,
+        "word": {
+          "proposal": "come",
+          "translated": "приходить"
+        },
+        "synonymous": {
+          "proposal": "came",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "come",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Coming</b> in from work",
+            "translated": "<b>Приходить</b> с работы"
+          }
+        ],
+        "image": "https://www.expatica.com/app/uploads/2020/07/man-late-for-meeting.jpg"
+      }
+
+
+
+
+
+
+
     ]
   }
 ]

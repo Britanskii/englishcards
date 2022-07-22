@@ -27,21 +27,25 @@ const Dropdown = ({className, text, lowerText}: dropdownProps) => {
             <AnimatePresence>
             {
                 isActive &&
-                <motion.div className={`${s.dropdown__lowerText}`}
+                <motion.div
+                    className={`${s.dropdown__lowerText}`}
+                            style = {{overflow: 'hidden'}}
                             key="content"
                             initial="collapsed"
                             animate="open"
                             exit="collapsed"
                             onClick = {(event => event.stopPropagation())}
                             variants={{
-                                open: { opacity: 1, height: "auto" },
-                                collapsed: { opacity: 0, height: 0 }
+                                open: { opacity: 1, height: "auto"},
+                                collapsed: { opacity: 0, height: 0}
                             }}
                             transition={{
                                 type: "just"
                             }}
                 >
-                    {parse(lowerText)}
+                    <div className={s.dropdown__lowerText_parse}>
+                        {parse(lowerText)}
+                    </div>
                 </motion.div>
             }
             </AnimatePresence>

@@ -17,7 +17,6 @@ const Dictionaries = () => {
                 x: 0,
                 transition: {
                     delay: custom * .15
-                    // delay
                 }
             }
         }

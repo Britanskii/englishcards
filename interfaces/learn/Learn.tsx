@@ -8,6 +8,7 @@ import Card from "../../components/card/Card";
 import Complete from "./complete/Complete";
 import useTypedSelector from "../../hooks/useTypedSelector";
 import useActions from "../../hooks/useActions";
+import Dropdown from "../../components/dropdown/Dropdown";
 
 interface LearnProps {
     id: boolean

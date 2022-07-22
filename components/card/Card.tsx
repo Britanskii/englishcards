@@ -3,8 +3,6 @@ import Dropdown from "../dropdown/Dropdown";
 import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
 import {useState} from "react";
 import {AntonymI, CardI, ExampleI, SynonymousI, WordI} from "../../interfaces";
-import Image from "../image/Image";
-import eye from "../../resources/icons/eye.png"
 
 export interface CardProps {
     activeCard: number,
