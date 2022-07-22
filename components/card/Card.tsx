@@ -137,8 +137,13 @@ const Card = ({
 							— <span
 							className="synonymous">{synonymous.translated}</span>
 						</>}
-                        — <span
-                            className="antonym">{antonym.translated}</span></div>
+                        {antonym.translated &&
+						<>
+							— <span
+							className="antonym">{antonym.translated}</span>
+						</>}
+                    </div>
+
                     <div className={s.card__examples}>
                         {examples.map((example, id) => {
                             return <Dropdown
