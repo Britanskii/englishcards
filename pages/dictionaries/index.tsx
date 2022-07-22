@@ -1,4 +1,4 @@
-import Dictionaries from "../../interfaces/dictionaries/Dictionaries";
+import Dictionaries from "../../interfaces/dictionaries/Dictionaries"
 
 const Index = () => {
 

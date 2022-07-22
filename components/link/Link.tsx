@@ -1,7 +1,7 @@
 import s from "./link.module.sass"
-import LinkNext from "next/link";
+import LinkNext from "next/link"
 import {LinkProps} from "next/link"
-import {ReactNode, forwardRef} from "react";
+import {ReactNode, forwardRef} from "react"
 
 interface LinkNextProps extends LinkProps {
     className?: string,

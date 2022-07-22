@@ -1,4 +1,4 @@
-import Generator from "../../interfaces/generator/Generator";
+import Generator from "../../interfaces/generator/Generator"
 
 const Index = () => {
 
