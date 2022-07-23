@@ -33,6 +33,9 @@ $radius: 0px
 	&__word
 		text-transform: capitalize
 		font-size: 24px
+	&__synonymous, &__antonym
+		cursor: pointer
+		transition: .3s all ease
 	&__synonymous
 		color: $synonymous
 	&__antonym
@@ -94,6 +97,9 @@ $radius: 0px
 			text-align: left
 			background-color: $antonym
 			border-radius: 0 0 0 $radius
+
+.blur
+	filter: blur(4px)
 
 .card__body_active
 	.card

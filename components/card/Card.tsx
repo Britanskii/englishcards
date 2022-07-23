@@ -1,7 +1,7 @@
 import s from "./card.module.sass"
 import Dropdown from "../dropdown/Dropdown"
 import {motion, PanInfo, useTransform, useMotionValue} from "framer-motion"
-import {useState} from "react"
+import {Dispatch, SetStateAction, useState} from "react"
 import {AntonymI, CardI, ExampleI, SynonymousI, WordI} from "../../interfaces"
 import {variants} from "../../animtaion/card"
 
@@ -34,6 +34,8 @@ const Card = ({
               }: CardProps) => {
     const [answer, setAnswer] = useState(false)
     const [activeImg, setActiveImg] = useState(false)
+    const [activeSynonymous, setActiveSynonymous] = useState(false)
+    const [activeAntonym, setActiveAntonym] = useState(false)
     const [animate, setAnimate] = useState("mount")
 
     const sensitivity = 125
@@ -66,6 +68,8 @@ const Card = ({
     const onAnswer = () => {
         setActiveImg(true)
         setAnswer(true)
+        setActiveAntonym(true)
+        setActiveSynonymous(true)
     }
 
     const onDragEnd = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
@@ -84,6 +88,18 @@ const Card = ({
             setAnswer(false)
             setActiveImg(false)
         }
+    }
+
+    const onToggle = (setter: Dispatch<SetStateAction<boolean>>) => {
+        setter((isBool: boolean) => isBool = !isBool)
+    }
+
+    const onToggleSynonymous = () => {
+        onToggle(setActiveSynonymous)
+    }
+
+    const onToggleAntonym = () => {
+        onToggle(setActiveAntonym)
     }
 
     return (
@@ -111,14 +127,14 @@ const Card = ({
                     {synonymous.proposal &&
 					<>
 						<span> — </span>
-						<span className={s.card__synonymous}>
+						<span onClick={onToggleSynonymous} className={`${s.card__synonymous} ${activeSynonymous ? "" : s.blur}`}>
                             {synonymous.proposal}
                         </span>
 					</>}
                     {antonym.proposal &&
 					<>
 						<span> — </span>
-						<span className={s.card__antonym}>
+						<span onClick={onToggleAntonym} className={`${s.card__antonym} ${activeAntonym ? "" : s.blur}`}>
                             {antonym.proposal}
                         </span>
 					</>}
