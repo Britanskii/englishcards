@@ -128,7 +128,7 @@ const Card = ({
 					<>
 						<span> — </span>
 						<span onClick={onToggleSynonymous}
-						      className={`${s.card__synonymous} ${activeSynonymous ? "" : s.blur}`}>
+                            className={`${s.card__synonymous} ${activeSynonymous ? "" : s.blur}`}>
                             {synonymous.proposal}
                         </span>
 					</>}
