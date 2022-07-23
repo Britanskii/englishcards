@@ -16,11 +16,13 @@ interface LearnProps {
 
 const Learn = (props: LearnProps) => {
 
-    const {setDictionary} = useActions()
+    const {setDictionary, setStateDictionary} = useActions()
 
     const dictionary = useTypedSelector(state => state.dictionary)
+    const stateDictionary = useTypedSelector(state => state.stateDictionary)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
+    const [maxCards, setMaxCards] = useState<number>(0)
     const [activeCard, setActiveCard] = useState(0)
     const [isAll, setIsAll] = useState(false)
 
@@ -30,9 +32,8 @@ const Learn = (props: LearnProps) => {
         if (arrayCards !== undefined) {
             const newArrayCards = arrayCards.filter((card) => card.id !== id)
 
-
             if (newArrayCards.length > 0) setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
-            setDictionary(newArrayCards)
+            setStateDictionary(newArrayCards)
             setArrayCards(newArrayCards)
             if (newArrayCards.length === 0) setIsAll(true)
         }
@@ -52,18 +53,20 @@ const Learn = (props: LearnProps) => {
 
     useEffect(() => {
         if (props.id) {
+            setMaxCards(props.arrayCards.length)
             setDictionary(props.arrayCards)
+            setStateDictionary(props.arrayCards)
             setArrayCards(props.arrayCards)
             setActiveCard(getCardRandomId(props.arrayCards))
         } else {
-            setArrayCards(dictionary)
-            if (dictionary.length > 0) {
-                setActiveCard(getCardRandomId(dictionary))
+            setMaxCards(dictionary.length)
+            setArrayCards(stateDictionary)
+            if (stateDictionary.length > 0) {
+                setActiveCard(getCardRandomId(stateDictionary))
             } else {
                 setIsAll(true)
             }
         }
-
     }, [])
 
     const card = arrayCards.filter((card) => activeCard === card.id).map((card) => {
@@ -77,8 +80,8 @@ const Learn = (props: LearnProps) => {
     return (
         <div className={s.learn}>
             <div className={s.learn__progress}>
-                Повторено слов {props.arrayCards.length - arrayCards.length}
-                <Progress to={props.arrayCards.length} progress={arrayCards.length}/>
+                Повторено слов {maxCards - arrayCards.length}
+                <Progress to={maxCards} progress={arrayCards.length}/>
             </div>
             <div className={s.learn__cards}>
                 <AnimatePresence exitBeforeEnter>

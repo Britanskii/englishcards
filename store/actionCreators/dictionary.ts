@@ -15,4 +15,10 @@ export const setDictionary= (array: CardI[]) => {
     }
 }
 
+export const setStateDictionary= (array: CardI[]) => {
+    return (dispatch: Dispatch<DictionaryAction>) => {
+        dispatch({type: DictionaryActions.SET_STATE_DICTIONARY, payload: array})
+    }
+}
+
 

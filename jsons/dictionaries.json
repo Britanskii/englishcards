@@ -498,5 +498,57 @@
         "image": "https://www.expatica.com/app/uploads/2020/07/man-late-for-meeting.jpg"
       }
     ]
+  },
+  {
+    "id": 3,
+    "title": "Предлоги места",
+    "image": "/gun.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "On",
+          "translated": "На"
+        },
+        "synonymous": {
+          "proposal": "",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>On</b> the table",
+            "translated": "<b>На</b> столе"
+          }
+        ],
+        "image": "https://demotivation.ru/wp-content/uploads/2020/10/tired-businessman-having-a-sleep_Gy4D04w_-2048x1481.jpg"
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "In",
+          "translated": "В, на/в, внутри"
+        },
+        "synonymous": {
+          "proposal": "",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>In</b> my room. <b>In</b> the street",
+            "translated": "<b>В</b> моей комнате. <b>На </b> улице"
+          }
+        ],
+        "image": "https://i-a.d-cd.net/xITgMtMe_hxvEqNUNzBbhRrnaSE-1920.jpg"
+      }
+
+    ]
   }
 ]

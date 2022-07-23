@@ -73,7 +73,6 @@ const Generator = () => {
     }
 
     //handlers
-
     const onChange = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>, setter: Dispatch<SetStateAction<string>>) => {
         const text = event.target.value
 

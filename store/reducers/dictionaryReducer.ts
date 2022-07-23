@@ -2,7 +2,8 @@ import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/typ
 
 const defaultState = {
     page: 0,
-    dictionary: []
+    dictionary: [],
+    stateDictionary: []
 }
 
 const dictionaryReducer = (state = defaultState, action: DictionaryAction): DictionaryState => {
@@ -11,6 +12,8 @@ const dictionaryReducer = (state = defaultState, action: DictionaryAction): Dict
             return {...state, page: action.payload}
         case DictionaryActions.SET_DICTIONARY:
             return {...state, dictionary: action.payload}
+        case DictionaryActions.SET_STATE_DICTIONARY:
+            return {...state, stateDictionary: action.payload}
         default:
             return state
     }
