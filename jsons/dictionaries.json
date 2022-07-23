@@ -280,7 +280,7 @@
         "id": 5,
         "word": {
           "proposal": "blow",
-          "translated": "Начинать"
+          "translated": "Дуть"
         },
         "synonymous": {
           "proposal": "blew",
@@ -346,7 +346,7 @@
         "id": 8,
         "word": {
           "proposal": "build",
-          "translated": "Приносить"
+          "translated": "Строить"
         },
         "synonymous": {
           "proposal": "built",
@@ -497,13 +497,6 @@
         ],
         "image": "https://www.expatica.com/app/uploads/2020/07/man-late-for-meeting.jpg"
       }
-
-
-
-
-
-
-
     ]
   }
 ]
