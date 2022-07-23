@@ -127,7 +127,8 @@ const Card = ({
                     {synonymous.proposal &&
 					<>
 						<span> — </span>
-						<span onClick={onToggleSynonymous} className={`${s.card__synonymous} ${activeSynonymous ? "" : s.blur}`}>
+						<span onClick={onToggleSynonymous}
+						      className={`${s.card__synonymous} ${activeSynonymous ? "" : s.blur}`}>
                             {synonymous.proposal}
                         </span>
 					</>}
@@ -149,13 +150,11 @@ const Card = ({
                 <div className={s.card__answer}>
                     <div className={s.card__capitalize}>{word.translated}
                         {synonymous.translated &&
-						<>
-							— <span
+						<> — <span
 							className="synonymous">{synonymous.translated}</span>
 						</>}
                         {antonym.translated &&
-						<>
-							— <span
+						<> — <span
 							className="antonym">{antonym.translated}</span>
 						</>}
                     </div>

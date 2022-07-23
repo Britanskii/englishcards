@@ -547,7 +547,121 @@
           }
         ],
         "image": "https://i-a.d-cd.net/xITgMtMe_hxvEqNUNzBbhRrnaSE-1920.jpg"
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "Over",
+          "translated": "Над"
+        },
+        "synonymous": {
+          "proposal": "",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "Under",
+          "translated": "Под"
+        },
+        "examples": [
+          {
+            "proposal": "<b>Over</b> the garden. Stop <b>over</b> her. <b className ='antonym'>Under</b> the horse's leg",
+            "translated": "<b>Над</b> садом. Остановись <b>возле</b> неё. <b className ='antonym'>Под</b> ногами лошади"
+          }
+        ],
+        "image": "https://i.sunhome.ru/journal/81/12-filosofskih-istin.orig.jpg"
+      },
+
+      {
+        "id": 3,
+        "word": {
+          "proposal": "In front of",
+          "translated": "Впереди"
+        },
+        "synonymous": {
+          "proposal": "Opposite",
+          "translated": "Напротив"
+        },
+        "antonym": {
+          "proposal": "Behind",
+          "translated": "За, позади"
+        },
+        "examples": [
+          {
+            "proposal": "I stand <b>in front of</b> the sofa. My camera is <b className ='synonymous'>opposite</b> the sofa. I stand <b className ='antonym'>behind</b> the armchair",
+            "translated": "Я стою <b>перед</b> диваном. Моя камера <b className ='synonymous'>напротив</b> дивана. Я стою <b className ='antonym'>позади</b> кресла"
+          }
+        ],
+        "image": "https://i.ytimg.com/vi/xX-_kvh3RGQ/hqdefault.jpg"
+      },
+      {
+        "id": 4,
+        "word": {
+          "proposal": "Along",
+          "translated": "Вдоль, по"
+        },
+        "synonymous": {
+          "proposal": "Across",
+          "translated": "Поперёк, через"
+        },
+        "antonym": {
+          "proposal": "",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "<b>Along</b> the road. <b className ='synonymous'>Across</b> the river",
+            "translated": "<b>Вдоль</b> дороги. <b className ='synonymous'>Через</b> реку"
+          }
+        ],
+        "image": "https://coub-attachments.akamaized.net/coub_storage/coub/simple/cw_image/f270134f582/37641e854c24c71c6e171/1533408015_00032.jpg"
+      },
+      {
+        "id": 5,
+        "word": {
+          "proposal": "All over",
+          "translated": "Повсюду"
+        },
+        "synonymous": {
+          "proposal": "Among",
+          "translated": "Среди"
+        },
+        "antonym": {
+          "proposal": "Around",
+          "translated": "Вокруг"
+        },
+        "examples": [
+          {
+            "proposal": "<b>Spread</b> it all over! You were so lovely <b className ='synonymous'>among</b> all those women. Dirty clothes lying <b className ='antonym'>around</b>",
+            "translated": "<b>Распространи</b> это повсюду. Ты была так прекрасна вчера вечером, в <b className ='synonymous'>окружении</b> всех этих дам. Грязная одежда, разбросанная <b className ='antonym'>вокруг</b>"
+          }
+        ],
+        "image": "https://ustaliy.ru/wp-content/uploads/2019/09/depositphotos_129246006_xl-2015.jpg"
+      },
+      {
+        "id": 6,
+        "word": {
+          "proposal": "at",
+          "translated": "около"
+        },
+        "synonymous": {
+          "proposal": "near",
+          "translated": "рядом"
+        },
+        "antonym": {
+          "proposal": "far from",
+          "translated": "далеко от"
+        },
+        "examples": [
+          {
+            "proposal": "He sits <b>at</b> his desk. <b className ='synonymous'>Near</b> completion. It's not <b className ='antonym'>far from</b> here.",
+            "translated": "Он сидит <b>за</b> столом. <b className ='synonymous'>Почти</b> завершено. Это не <b className ='antonym'>далеко от</b> сюда"
+          }
+        ],
+        "image": "https://esquire.kz/wp-content/uploads/2020/02/1000_t-5.jpg"
       }
+
+
+
 
     ]
   }

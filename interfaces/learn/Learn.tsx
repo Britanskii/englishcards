@@ -80,7 +80,7 @@ const Learn = (props: LearnProps) => {
     return (
         <div className={s.learn}>
             <div className={s.learn__progress}>
-                Повторено слов {maxCards - arrayCards.length}
+                Повторено слов {maxCards - arrayCards.length}/{maxCards}
                 <Progress to={maxCards} progress={arrayCards.length}/>
             </div>
             <div className={s.learn__cards}>
