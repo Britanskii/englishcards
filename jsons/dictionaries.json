@@ -162,7 +162,7 @@
   },
   {
     "id": 2,
-    "title": "15 неправильных глаголов",
+    "title": "25 неправильных глаголов",
     "image": "/book.svg",
     "dictionary": [
       {
@@ -253,7 +253,6 @@
         ],
         "image": "https://see-aych.com/2000s-movies/wp-content/uploads/2017/09/showtime-2002.jpg"
       },
-
       {
         "id": 4,
         "word": {
@@ -364,7 +363,6 @@
         ],
         "image": "https://absolutera.ru/uploads/article/logo/7216/______614197_prikol_yumor_stremyanka_lestitsa_oboi_mujik_chelov_2200x1650_www.Gde-Fon.com.jpg"
       },
-
       {
         "id": 9,
         "word": {
@@ -496,6 +494,226 @@
           }
         ],
         "image": "https://www.expatica.com/app/uploads/2020/07/man-late-for-meeting.jpg"
+      },
+      {
+        "id": 15,
+        "word": {
+          "proposal": "cost",
+          "translated": "Стоить, иметь цену"
+        },
+        "synonymous": {
+          "proposal": "cost",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "cost",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 16,
+        "word": {
+          "proposal": "cut",
+          "translated": "Резать"
+        },
+        "synonymous": {
+          "proposal": "cut",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "cut",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 18,
+        "word": {
+          "proposal": "dig",
+          "translated": "Копать"
+        },
+        "synonymous": {
+          "proposal": "dug",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "dug",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 19,
+        "word": {
+          "proposal": "do",
+          "translated": "Делать"
+        },
+        "synonymous": {
+          "proposal": "did",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "done",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 20,
+        "word": {
+          "proposal": "draw",
+          "translated": "Рисовать (карандашом)"
+        },
+        "synonymous": {
+          "proposal": "drew",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "drawn",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 21,
+        "word": {
+          "proposal": "dream",
+          "translated": "Мечтать"
+        },
+        "synonymous": {
+          "proposal": "dreamt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "dreamt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 22,
+        "word": {
+          "proposal": "drink",
+          "translated": "Пить"
+        },
+        "synonymous": {
+          "proposal": "drank",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "drunk",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 23,
+        "word": {
+          "proposal": "drive",
+          "translated": "Водить (машину)"
+        },
+        "synonymous": {
+          "proposal": "drove",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "driven",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 24,
+        "word": {
+          "proposal": "drive",
+          "translated": "Водить (машину)"
+        },
+        "synonymous": {
+          "proposal": "drove",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "driven",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 25,
+        "word": {
+          "proposal": "fall",
+          "translated": "Падать"
+        },
+        "synonymous": {
+          "proposal": "fell",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "fallen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
       }
     ]
   },
@@ -570,7 +788,6 @@
         ],
         "image": "https://i.sunhome.ru/journal/81/12-filosofskih-istin.orig.jpg"
       },
-
       {
         "id": 3,
         "word": {
@@ -659,10 +876,748 @@
         ],
         "image": "https://esquire.kz/wp-content/uploads/2020/02/1000_t-5.jpg"
       }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "25 неправильных глаголов 2",
+    "image": "/book.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "leave",
+          "translated": "Уезжать, покидать"
+        },
+        "synonymous": {
+          "proposal": "left",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "left",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "feel",
+          "translated": "Чувствовать"
+        },
+        "synonymous": {
+          "proposal": "felt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "felt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "feed",
+          "translated": "Кормить"
+        },
+        "synonymous": {
+          "proposal": "fed",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "fed",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 3,
+        "word": {
+          "proposal": "feel",
+          "translated": "Чувствовать"
+        },
+        "synonymous": {
+          "proposal": "felt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "felt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 4,
+        "word": {
+          "proposal": "find",
+          "translated": "Находить"
+        },
+        "synonymous": {
+          "proposal": "found",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "found",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 5,
+        "word": {
+          "proposal": "fly",
+          "translated": "Летать"
+        },
+        "synonymous": {
+          "proposal": "flew",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "flown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
 
+      {
+        "id": 6,
+        "word": {
+          "proposal": "forget",
+          "translated": "Забывать"
+        },
+        "synonymous": {
+          "proposal": "forgot",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "forgotten",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 7,
+        "word": {
+          "proposal": "forgive",
+          "translated": "Прощать"
+        },
+        "synonymous": {
+          "proposal": "forgave",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "forgiven",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 8,
+        "word": {
+          "proposal": "freeze",
+          "translated": "Замерзать"
+        },
+        "synonymous": {
+          "proposal": "froze",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "frozen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 9,
+        "word": {
+          "proposal": "get",
+          "translated": "Получать, становиться"
+        },
+        "synonymous": {
+          "proposal": "got",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "got",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 10,
+        "word": {
+          "proposal": "give",
+          "translated": "Давать, дарить"
+        },
+        "synonymous": {
+          "proposal": "gave",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "given",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 11,
+        "word": {
+          "proposal": "go",
+          "translated": "Идти"
+        },
+        "synonymous": {
+          "proposal": "went",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "gone",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 12,
+        "word": {
+          "proposal": "grow",
+          "translated": "Расти, выращивать"
+        },
+        "synonymous": {
+          "proposal": "grew",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "grown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
 
-
-
+      {
+        "id": 13,
+        "word": {
+          "proposal": "hang",
+          "translated": "Висеть, вешать"
+        },
+        "synonymous": {
+          "proposal": "hung",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "hung",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 14,
+        "word": {
+          "proposal": "have",
+          "translated": "Иметь"
+        },
+        "synonymous": {
+          "proposal": "had",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "had",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 15,
+        "word": {
+          "proposal": "hear",
+          "translated": "Слышать"
+        },
+        "synonymous": {
+          "proposal": "heard",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "heard",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 16,
+        "word": {
+          "proposal": "hide",
+          "translated": "Прятать"
+        },
+        "synonymous": {
+          "proposal": "hid",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "hidden",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 17,
+        "word": {
+          "proposal": "hit",
+          "translated": "Ударять, поражать"
+        },
+        "synonymous": {
+          "proposal": "hit",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "hit",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 18,
+        "word": {
+          "proposal": "hold",
+          "translated": "Держать, проводить"
+        },
+        "synonymous": {
+          "proposal": "held",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "held",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 19,
+        "word": {
+          "proposal": "hurt",
+          "translated": "Причинять боль, болеть"
+        },
+        "synonymous": {
+          "proposal": "hurt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "hurt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 20,
+        "word": {
+          "proposal": "keep",
+          "translated": "Хранить, продолжать делать"
+        },
+        "synonymous": {
+          "proposal": "kept",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "kept",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 21,
+        "word": {
+          "proposal": "know",
+          "translated": "Знать"
+        },
+        "synonymous": {
+          "proposal": "knew",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "known",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 22,
+        "word": {
+          "proposal": "lay",
+          "translated": "Класть"
+        },
+        "synonymous": {
+          "proposal": "laid",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "laid",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 23,
+        "word": {
+          "proposal": "lead",
+          "translated": "Вести, быть лидером"
+        },
+        "synonymous": {
+          "proposal": "led",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "led",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 24,
+        "word": {
+          "proposal": "learn",
+          "translated": "Учить(-ся), узнавать"
+        },
+        "synonymous": {
+          "proposal": "learnt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "learnt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "25 неправильных глаголов 3",
+    "image": "/gun.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "lend",
+          "translated": "Сдавать в аренду"
+        },
+        "synonymous": {
+          "proposal": "lent",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "lent",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "let",
+          "translated": "Позволять"
+        },
+        "synonymous": {
+          "proposal": "let",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "let",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "lie",
+          "translated": "Лежать"
+        },
+        "synonymous": {
+          "proposal": "lay",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "lain",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 3,
+        "word": {
+          "proposal": "light",
+          "translated": "Зажигать"
+        },
+        "synonymous": {
+          "proposal": "lit",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "lit",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 4,
+        "word": {
+          "proposal": "lose",
+          "translated": "Терять"
+        },
+        "synonymous": {
+          "proposal": "lost",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "lost",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 5,
+        "word": {
+          "proposal": "make",
+          "translated": "Делать, изготовлять"
+        },
+        "synonymous": {
+          "proposal": "made",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "made",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 6,
+        "word": {
+          "proposal": "mean",
+          "translated": "Иметь в виду"
+        },
+        "synonymous": {
+          "proposal": "meant",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "meant",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 7,
+        "word": {
+          "proposal": "meet",
+          "translated": "Встречать(ся), знакомиться"
+        },
+        "synonymous": {
+          "proposal": "met",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "met",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      }
     ]
   }
 ]

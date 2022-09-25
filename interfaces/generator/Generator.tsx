@@ -68,7 +68,7 @@ const Generator = () => {
                   }
                 ],
                 "image": "${image}"
-              }
+              },
         `)
     }
 

@@ -22,7 +22,6 @@ const Dictionaries = () => {
         }
     }
 
-
     const dictionaries = data.map((dictionary, index) => {
 
         const setDictionary = () => {
@@ -32,7 +31,7 @@ const Dictionaries = () => {
         return (
             <motion.li
                 onClick={setDictionary}
-                key={dictionary.image}
+                key={`${dictionary.image}_${index}`}
                 custom={index}
                 variants={variants}
                 initial={{opacity: 0, x: -200}}
