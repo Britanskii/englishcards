@@ -1617,6 +1617,382 @@
           }
         ],
         "image": ""
+      },
+      {
+        "id": 8,
+        "word": {
+          "proposal": "pay",
+          "translated": "платить"
+        },
+        "synonymous": {
+          "proposal": "paid",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "paid",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 9,
+        "word": {
+          "proposal": "put",
+          "translated": "класть, положить"
+        },
+        "synonymous": {
+          "proposal": "put",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "put",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 10,
+        "word": {
+          "proposal": "read",
+          "translated": "читать"
+        },
+        "synonymous": {
+          "proposal": "read",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "read",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 11,
+        "word": {
+          "proposal": "ride",
+          "translated": "ехать (верхом)"
+        },
+        "synonymous": {
+          "proposal": "rode",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "ridden",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+
+      {
+        "id": 12,
+        "word": {
+          "proposal": "ring",
+          "translated": "звонить"
+        },
+        "synonymous": {
+          "proposal": "rang",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "rung",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 13,
+        "word": {
+          "proposal": "rise",
+          "translated": "вставать, подниматься"
+        },
+        "synonymous": {
+          "proposal": "rose",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "risen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 14,
+        "word": {
+          "proposal": "run",
+          "translated": "бегать"
+        },
+        "synonymous": {
+          "proposal": "ran",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "run",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+
+      {
+        "id": 15,
+        "word": {
+          "proposal": "say",
+          "translated": "сказать"
+        },
+        "synonymous": {
+          "proposal": "said",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "said",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 16,
+        "word": {
+          "proposal": "see",
+          "translated": "видеть"
+        },
+        "synonymous": {
+          "proposal": "saw",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "seen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 17,
+        "word": {
+          "proposal": "sell",
+          "translated": "продавать"
+        },
+        "synonymous": {
+          "proposal": "sold",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "sold",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 18,
+        "word": {
+          "proposal": "send",
+          "translated": "отправлять, посылать"
+        },
+        "synonymous": {
+          "proposal": "sent",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "sent",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 19,
+        "word": {
+          "proposal": "set",
+          "translated": "устанавливать"
+        },
+        "synonymous": {
+          "proposal": "set",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "set",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 20,
+        "word": {
+          "proposal": "sew",
+          "translated": "шить"
+        },
+        "synonymous": {
+          "proposal": "sewed",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "sewn",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 21,
+        "word": {
+          "proposal": "shake",
+          "translated": "трясти,трястись"
+        },
+        "synonymous": {
+          "proposal": "shook",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shaken",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 22,
+        "word": {
+          "proposal": "shine",
+          "translated": "светить, сверкать (о  солнце)"
+        },
+        "synonymous": {
+          "proposal": "shone",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shone",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 23,
+        "word": {
+          "proposal": "shoot",
+          "translated": "стрелять"
+        },
+        "synonymous": {
+          "proposal": "shot",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shot",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 24,
+        "word": {
+          "proposal": "show",
+          "translated": "показывать"
+        },
+        "synonymous": {
+          "proposal": "showed",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
       }
     ]
   }
