@@ -1,6 +1,6 @@
 import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/types"
 
-const defaultState = {
+const defaultState: DictionaryState = {
     page: 0,
     dictionary: [],
     stateDictionary: []

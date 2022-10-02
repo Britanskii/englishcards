@@ -10,7 +10,7 @@ interface ProgressProps {
 
 const Progress = ({to, progress}: ProgressProps) => {
 
-    const customProgress = `-${(100 / to) * progress}%`
+    const customProgress = to !== 0 ? `-${(100 / to) * progress}%` : 0
 
     const variants = {
         progress: {
