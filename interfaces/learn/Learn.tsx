@@ -18,8 +18,8 @@ const Learn = (props: LearnProps) => {
 
     const {setDictionary, setStateDictionary, addMistakesWord} = useActions()
 
-    const dictionary = useTypedSelector(state => state.dictionary.dictionary)
-    const stateDictionary = useTypedSelector(state => state.dictionary.stateDictionary)
+    const {dictionary} = useTypedSelector(state => state.dictionary)
+    const {stateDictionary} = useTypedSelector(state => state.dictionary)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [maxCards, setMaxCards] = useState<number>(0)
