@@ -4,8 +4,10 @@ import data from "../../jsons/dictionaries.json"
 import {motion} from "framer-motion"
 import Link from "../../components/link/Link"
 import useActions from "../../hooks/useActions"
+import useTypedSelector from "../../hooks/useTypedSelector"
 
 const Dictionaries = () => {
+    const mistakes = useTypedSelector(state => state.mistakes)
 
     const {setDictionaryId} = useActions()
 
@@ -22,7 +24,7 @@ const Dictionaries = () => {
         }
     }
 
-    const dictionaries = data.map((dictionary, index) => {
+    const dictionaries = [...data, mistakes].map((dictionary, index) => {
 
         const setDictionary = () => {
             setDictionaryId(dictionary.id)

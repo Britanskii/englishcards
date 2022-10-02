@@ -1995,5 +1995,254 @@
         "image": ""
       }
     ]
+  },
+  {
+    "id": 6,
+    "title": "25 неправильных глаголов 4",
+    "image": "/gun.svg",
+    "dictionary": [
+      {
+        "id": 0,
+        "word": {
+          "proposal": "show",
+          "translated": "Показывать"
+        },
+        "synonymous": {
+          "proposal": "showed",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 1,
+        "word": {
+          "proposal": "shut",
+          "translated": "Закрывать, захлопывать"
+        },
+        "synonymous": {
+          "proposal": "shut",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "shut",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 2,
+        "word": {
+          "proposal": "sing",
+          "translated": "Петь"
+        },
+        "synonymous": {
+          "proposal": "sang",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "sung",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 3,
+        "word": {
+          "proposal": "sit",
+          "translated": "Сидеть"
+        },
+        "synonymous": {
+          "proposal": "sat",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "sat",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 4,
+        "word": {
+          "proposal": "sleep",
+          "translated": "Спать"
+        },
+        "synonymous": {
+          "proposal": "sept",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "slept",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 5,
+        "word": {
+          "proposal": "smell",
+          "translated": "Нюхать, иметь запах"
+        },
+        "synonymous": {
+          "proposal": "smelt",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "smelt",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 6,
+        "word": {
+          "proposal": "speak",
+          "translated": "говорить"
+        },
+        "synonymous": {
+          "proposal": "spoke",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "spoken",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 7,
+        "word": {
+          "proposal": "spend",
+          "translated": "Проводить (время), тратить (деньги))"
+        },
+        "synonymous": {
+          "proposal": "spent",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "spent",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 8,
+        "word": {
+          "proposal": "stand",
+          "translated": "Стоять"
+        },
+        "synonymous": {
+          "proposal": "stood",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "stood",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 9,
+        "word": {
+          "proposal": "steal",
+          "translated": "Красть, воровать"
+        },
+        "synonymous": {
+          "proposal": "stole",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "stolen",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 10,
+        "word": {
+          "proposal": "swim",
+          "translated": "Плавать"
+        },
+        "synonymous": {
+          "proposal": "swam",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "swum",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      }
+    ]
   }
-]
+    ]

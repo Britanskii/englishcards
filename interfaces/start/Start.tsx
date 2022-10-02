@@ -1,6 +1,8 @@
 import s from "./start.module.sass"
+import useActions from "../../hooks/useActions"
 
 const Start = () => {
+    // const {addMistakesWord} = useActions()
 
     return (
         <div className={s.start}>
@@ -8,6 +10,7 @@ const Start = () => {
             <a className={s.start__link} href="http://www.newgeneralservicelist.org/">Слова для тех кто изучает английский как второй язык</a>
             <a className={s.start__link} href="https://www.synonyms-thesaurus.com/synonyms-career">Синонимы/антонимы</a>
             <a className={s.start__link} href="https://www.deepl.com/translator">Переводчик</a>
+            {/*<button>Add card</button>*/}
         </div>
     )
 }

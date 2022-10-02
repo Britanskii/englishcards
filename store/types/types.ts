@@ -6,6 +6,15 @@ export enum DictionaryActions {
     SET_STATE_DICTIONARY = "SET_STATE_DICTIONARY"
 }
 
+export enum MistakesActions {
+    ADD_WORD = "ADD_WORD"
+}
+
+export interface AddMistakesWord {
+    type: MistakesActions.ADD_WORD
+    payload: CardI
+}
+
 export interface DictionaryState {
     page: number
     dictionary: CardI[]
@@ -28,5 +37,5 @@ interface SetStateDictionaryAction {
 }
 
 export type DictionaryAction = SetPageAction | SetDictionaryAction | SetStateDictionaryAction
-
+export type MistakesAction = AddMistakesWord
 

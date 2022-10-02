@@ -16,10 +16,10 @@ interface LearnProps {
 
 const Learn = (props: LearnProps) => {
 
-    const {setDictionary, setStateDictionary} = useActions()
+    const {setDictionary, setStateDictionary, addMistakesWord} = useActions()
 
-    const dictionary = useTypedSelector(state => state.dictionary)
-    const stateDictionary = useTypedSelector(state => state.stateDictionary)
+    const dictionary = useTypedSelector(state => state.dictionary.dictionary)
+    const stateDictionary = useTypedSelector(state => state.dictionary.stateDictionary)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [maxCards, setMaxCards] = useState<number>(0)
@@ -40,6 +40,8 @@ const Learn = (props: LearnProps) => {
     }
 
     const onIDontKnow = () => {
+        addMistakesWord(arrayCards[activeCard])
+
         let id = getCardRandomId(arrayCards)
 
         if (arrayCards.length > 1) {

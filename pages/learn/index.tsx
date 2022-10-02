@@ -1,6 +1,7 @@
 import {CardI} from "../../interfaces"
 import data from "../../jsons/cards.json"
 import Learn from "../../interfaces/learn/Learn"
+import useTypedSelector from "../../hooks/useTypedSelector"
 
 interface LearnProps {
     arrayCards: CardI[]
@@ -8,8 +9,10 @@ interface LearnProps {
 
 const Index = (props: LearnProps) => {
 
+    const arrayCards =  props.arrayCards
+
     return (
-        <Learn id = {false} arrayCards={props.arrayCards}/>
+        <Learn id = {false} arrayCards={arrayCards}/>
     )
 }
 
