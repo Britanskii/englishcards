@@ -1,7 +1,12 @@
 import s from "./start.module.sass"
 import useActions from "../../hooks/useActions"
+import useTypedSelector from "../../hooks/useTypedSelector"
 
 const Start = () => {
+    const state = useTypedSelector(state => state)
+
+    console.log(state)
+
     // const {addMistakesWord} = useActions()
 
     return (

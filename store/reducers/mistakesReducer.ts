@@ -1,20 +1,23 @@
 import {
+    DictionaryState,
     MistakesAction,
     MistakesActions
 } from "../types/types"
-import {DictionaryI} from "../../interfaces"
 
-const defaultState: DictionaryI = {
-    id: 8,
+const defaultState: DictionaryState = {
+    id: "mistakes",
     image: "/mistakes.svg",
     title: "Ошибки",
-    dictionary: []
+    words: [],
+    stateWords: [],
 }
 
-const mistakesReducer = (state = defaultState, action: MistakesAction): DictionaryI => {
+const mistakesReducer = (state = defaultState, action: MistakesAction): DictionaryState => {
     switch (action.type) {
         case MistakesActions.ADD_WORD:
-            return {...state, dictionary: [...state.dictionary, action.payload]}
+            return {...state, words: [...state.words, action.payload]}
+        case MistakesActions.NOTHING:
+            return state
         default:
             return state
     }

@@ -1,19 +1,21 @@
 import {DictionaryAction, DictionaryActions, DictionaryState} from "../types/types"
 
 const defaultState: DictionaryState = {
-    page: 0,
-    dictionary: [],
-    stateDictionary: []
+    id: 0,
+    title: "title",
+    image: "string",
+    words: [],
+    stateWords: []
 }
 
 const dictionaryReducer = (state = defaultState, action: DictionaryAction): DictionaryState => {
     switch (action.type) {
-        case DictionaryActions.SET_PAGE:
-            return {...state, page: action.payload}
+        case DictionaryActions.SET_ID:
+            return {...state, id: action.payload}
         case DictionaryActions.SET_DICTIONARY:
-            return {...state, dictionary: action.payload}
+            return {...state, words: action.payload}
         case DictionaryActions.SET_STATE_DICTIONARY:
-            return {...state, stateDictionary: action.payload}
+            return {...state, stateWords: action.payload}
         default:
             return state
     }

@@ -2,8 +2,19 @@ import {Dispatch} from "redux"
 import {MistakesAction, MistakesActions} from "../types/types"
 import {CardI} from "../../interfaces"
 
-export const addMistakesWord = (card: CardI) => {
+export const addMistakesWord = (card: CardI, arrayCards: CardI[]) => {
+
+    const isNotExist = !arrayCards.indexOf(card)
+
+    if (isNotExist) {
+       const mistakeWord = {...card, id: arrayCards.length}
+
+        return (dispatch: Dispatch<MistakesAction>) => {
+            dispatch({type: MistakesActions.ADD_WORD, payload: mistakeWord})
+        }
+    }
+
     return (dispatch: Dispatch<MistakesAction>) => {
-        dispatch({type: MistakesActions.ADD_WORD, payload: card})
+        dispatch({type: MistakesActions.NOTHING})
     }
 }

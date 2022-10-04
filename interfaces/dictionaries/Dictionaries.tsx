@@ -8,9 +8,9 @@ import useTypedSelector from "../../hooks/useTypedSelector"
 
 const Dictionaries = () => {
     const mistakes = useTypedSelector(state => state.mistakes)
+    const dictionary = useTypedSelector(state => state.dictionary)
 
     const {setDictionaryId} = useActions()
-
 
     const variants = {
         appearance: (custom: number) => {
@@ -24,28 +24,28 @@ const Dictionaries = () => {
         }
     }
 
-    const dictionaries = [...data, mistakes].map((dictionary, index) => {
+    const dictionaries = [...data, mistakes].map(({id, image, title}, index) => {
 
         const setDictionary = () => {
-            setDictionaryId(dictionary.id)
+                setDictionaryId(id)
         }
 
         return (
             <motion.li
                 onClick={setDictionary}
-                key={`${dictionary.image}_${index}`}
+                key={`${image}_${index}`}
                 custom={index}
                 variants={variants}
                 initial={{opacity: 0, x: -200}}
                 animate={"appearance"}
                 className={s.dictionaries__wrapper}
             >
-                <Link className={s.dictionaries__item} href={`/learn/${dictionary.id}`}>
+                <Link className={s.dictionaries__item} href={`/learn/${id}`}>
                     <div className={s.dictionaries__view}>
-                        <Image src={dictionary.image} className={s.dictionaries__image}/>
+                        <Image src={image} className={s.dictionaries__image}/>
                     </div>
                     <div className={s.dictionaries__text}>
-                        {dictionary.title}
+                        {title}
                     </div>
                 </Link>
             </motion.li>

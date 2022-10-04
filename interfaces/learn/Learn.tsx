@@ -8,18 +8,19 @@ import Card from "../../components/card/Card"
 import Complete from "./complete/Complete"
 import useTypedSelector from "../../hooks/useTypedSelector"
 import useActions from "../../hooks/useActions"
+import {LearnSelected} from "../../store/types/types"
 
 interface LearnProps {
-    id: boolean
-    arrayCards: CardI[]
+    selected: LearnSelected
 }
 
 const Learn = (props: LearnProps) => {
 
-    const {setDictionary, setStateDictionary, addMistakesWord} = useActions()
+    const {setWords, setStateWords, addMistakesWord} = useActions()
 
-    const {dictionary} = useTypedSelector(state => state.dictionary)
-    const {stateDictionary} = useTypedSelector(state => state.dictionary)
+    const {words} = useTypedSelector(state => state.dictionary)
+    const {stateWords} = useTypedSelector(state => state.dictionary)
+    const mistakes = useTypedSelector(state => state.mistakes)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
     const [maxCards, setMaxCards] = useState<number>(0)
@@ -33,14 +34,14 @@ const Learn = (props: LearnProps) => {
             const newArrayCards = arrayCards.filter((card) => card.id !== id)
 
             if (newArrayCards.length > 0) setActiveCard(newArrayCards[getRandomIntenger(0, newArrayCards.length)].id)
-            setStateDictionary(newArrayCards)
+            setStateWords(newArrayCards)
             setArrayCards(newArrayCards)
             if (newArrayCards.length === 0) setIsAll(true)
         }
     }
 
     const onIDontKnow = () => {
-        addMistakesWord(arrayCards[activeCard])
+        addMistakesWord(arrayCards[activeCard], mistakes.words)
 
         let id = getCardRandomId(arrayCards)
 
@@ -54,17 +55,19 @@ const Learn = (props: LearnProps) => {
     }
 
     useEffect(() => {
-        if (props.id) {
-            setMaxCards(props.arrayCards.length)
-            setDictionary(props.arrayCards)
-            setStateDictionary(props.arrayCards)
-            setArrayCards(props.arrayCards)
-            setActiveCard(getCardRandomId(props.arrayCards))
+        if (props.selected.id) {
+            const words = props.selected.dictionary!.words
+
+            setMaxCards(words.length)
+            setWords(words)
+            setStateWords(words)
+            setArrayCards(words)
+            setActiveCard(getCardRandomId(words))
         } else {
-            setMaxCards(dictionary.length)
-            setArrayCards(stateDictionary)
-            if (stateDictionary.length > 0) {
-                setActiveCard(getCardRandomId(stateDictionary))
+            setMaxCards(words.length)
+            setArrayCards(stateWords)
+            if (stateWords.length > 0) {
+                setActiveCard(getCardRandomId(stateWords))
             } else {
                 setIsAll(true)
             }
@@ -79,9 +82,7 @@ const Learn = (props: LearnProps) => {
             </div>
             <div className={s.learn__cards}>
                 <AnimatePresence exitBeforeEnter>
-                    {isAll &&
-                        <Complete/>
-                    }
+                    {isAll && <Complete/>}
                     {arrayCards.filter((card) => activeCard === card.id).map((card) =>
                             <Card arrayCards={arrayCards} image={card.image} length={arrayCards.length} word={card.word}
                                   antonym={card.antonym}

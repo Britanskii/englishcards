@@ -3,19 +3,19 @@ import {Dispatch} from "redux"
 import {CardI} from "../../interfaces"
 
 
-export const setDictionaryId = (id: number) => {
+export const setDictionaryId = (id: number | string) => {
     return (dispatch: Dispatch<DictionaryAction>) => {
-        dispatch({type: DictionaryActions.SET_PAGE, payload: id})
+        dispatch({type: DictionaryActions.SET_ID, payload: id})
     }
 }
 
-export const setDictionary= (array: CardI[]) => {
+export const setWords= (array: CardI[]) => {
     return (dispatch: Dispatch<DictionaryAction>) => {
         dispatch({type: DictionaryActions.SET_DICTIONARY, payload: array})
     }
 }
 
-export const setStateDictionary= (array: CardI[]) => {
+export const setStateWords= (array: CardI[]) => {
     return (dispatch: Dispatch<DictionaryAction>) => {
         dispatch({type: DictionaryActions.SET_STATE_DICTIONARY, payload: array})
     }

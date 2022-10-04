@@ -2092,15 +2092,15 @@
       {
         "id": 4,
         "word": {
-          "proposal": "sleep",
-          "translated": "Спать"
+          "proposal": "sweep",
+          "translated": "подметать"
         },
         "synonymous": {
-          "proposal": "sept",
+          "proposal": "swept",
           "translated": ""
         },
         "antonym": {
-          "proposal": "slept",
+          "proposal": "swept",
           "translated": ""
         },
         "examples": [
@@ -2233,6 +2233,248 @@
         },
         "antonym": {
           "proposal": "swum",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 11,
+        "word": {
+          "proposal": "take",
+          "translated": "брать"
+        },
+        "synonymous": {
+          "proposal": "took",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "taken",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 12,
+        "word": {
+          "proposal": "teach",
+          "translated": "преподавать, учить"
+        },
+        "synonymous": {
+          "proposal": "taught",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "taught",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 13,
+        "word": {
+          "proposal": "tear",
+          "translated": "рвать"
+        },
+        "synonymous": {
+          "proposal": "tore",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "torn",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 14,
+        "word": {
+          "proposal": "tell",
+          "translated": "сказать (кому-л.)"
+        },
+        "synonymous": {
+          "proposal": "told",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "told",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 15,
+        "word": {
+          "proposal": "think",
+          "translated": "думать"
+        },
+        "synonymous": {
+          "proposal": "thought",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "thought",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 16,
+        "word": {
+          "proposal": "throw",
+          "translated": "бросать"
+        },
+        "synonymous": {
+          "proposal": "threw",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "thrown",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 17,
+        "word": {
+          "proposal": "understand",
+          "translated": "понимать"
+        },
+        "synonymous": {
+          "proposal": "understood",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "understood",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 18,
+        "word": {
+          "proposal": "wake",
+          "translated": "просыпаться, будить"
+        },
+        "synonymous": {
+          "proposal": "woke",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "woken",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 19,
+        "word": {
+          "proposal": "win",
+          "translated": "побеждать"
+        },
+        "synonymous": {
+          "proposal": "won",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "won",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 20,
+        "word": {
+          "proposal": "wear",
+          "translated": "носить (одежду)"
+        },
+        "synonymous": {
+          "proposal": "wore",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "worn",
+          "translated": ""
+        },
+        "examples": [
+          {
+            "proposal": "",
+            "translated": ""
+          }
+        ],
+        "image": ""
+      },
+      {
+        "id": 21,
+        "word": {
+          "proposal": "write",
+          "translated": "писать"
+        },
+        "synonymous": {
+          "proposal": "wrote",
+          "translated": ""
+        },
+        "antonym": {
+          "proposal": "written",
           "translated": ""
         },
         "examples": [

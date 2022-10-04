@@ -1,13 +1,14 @@
 import {CardI} from "../../interfaces"
 
 export enum DictionaryActions {
-    SET_PAGE = "SET_PAGE",
+    SET_ID = "SET_ID",
     SET_DICTIONARY = "SET_DICTIONARY",
     SET_STATE_DICTIONARY = "SET_STATE_DICTIONARY"
 }
 
 export enum MistakesActions {
-    ADD_WORD = "ADD_WORD"
+    ADD_WORD = "ADD_WORD",
+    NOTHING = "SET_STATE_DICTIONARY"
 }
 
 export interface AddMistakesWord {
@@ -15,15 +16,33 @@ export interface AddMistakesWord {
     payload: CardI
 }
 
+export interface MistakesNothing {
+    type: MistakesActions.NOTHING
+}
+
 export interface DictionaryState {
-    page: number
-    dictionary: CardI[]
-    stateDictionary: CardI[]
+    id: number | string
+    image: string
+    title: string
+    words: CardI[]
+    stateWords: CardI[]
+}
+
+export interface Dictionary {
+    id: number | string
+    image: string
+    title: string
+    words: CardI[]
+}
+
+export interface LearnSelected {
+    id: boolean
+    dictionary?: Dictionary
 }
 
 interface SetPageAction {
-    type: DictionaryActions.SET_PAGE,
-    payload: number
+    type: DictionaryActions.SET_ID,
+    payload: number | string
 }
 
 interface SetDictionaryAction {
@@ -37,5 +56,5 @@ interface SetStateDictionaryAction {
 }
 
 export type DictionaryAction = SetPageAction | SetDictionaryAction | SetStateDictionaryAction
-export type MistakesAction = AddMistakesWord
+export type MistakesAction = AddMistakesWord | MistakesNothing
 
