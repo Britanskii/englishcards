@@ -3,7 +3,7 @@
     "id": 1,
     "title": "25 слов уровня A1 (часть 1)",
     "image": "/eye.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {
@@ -164,7 +164,7 @@
     "id": 2,
     "title": "25 неправильных глаголов",
     "image": "/book.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {
@@ -721,7 +721,7 @@
     "id": 3,
     "title": "Предлоги места",
     "image": "/gun.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {
@@ -882,7 +882,7 @@
     "id": 4,
     "title": "25 неправильных глаголов 2",
     "image": "/book.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {
@@ -1441,7 +1441,7 @@
     "id": 5,
     "title": "25 неправильных глаголов 3",
     "image": "/gun.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {
@@ -2000,7 +2000,7 @@
     "id": 6,
     "title": "25 неправильных глаголов 4",
     "image": "/gun.svg",
-    "dictionary": [
+    "words": [
       {
         "id": 0,
         "word": {

@@ -1,12 +1,11 @@
-import s from "./learn.module.sass"
 import data from "../../jsons/dictionaries.json"
 import {CardI} from "../../interfaces"
 import Learn from "../../interfaces/learn/Learn"
-import {GetStaticProps, GetStaticPaths } from "next"
-import {LearnSelected} from "../../store/types/types"
+import {GetStaticPaths, GetStaticProps} from "next"
+import {LearnSelected, LearnType} from "../../store/types/types"
 
 interface LearnProps {
-    id: number | string
+    id: LearnType
     title: string
     image: string
     arrayCards: CardI[]
@@ -15,7 +14,7 @@ interface LearnProps {
 const LearnById = (props: LearnProps) => {
 
     const selected: LearnSelected = {
-        id: true,
+        type: LearnType.ID,
         dictionary: {
             id: props.id,
             title: props.title,
@@ -44,7 +43,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
         const currentData = data[index - 1]
 
         id = currentData.id
-        arrayCards = currentData.dictionary
+        arrayCards = currentData.words
         title = currentData.title
         image = currentData.image
     }

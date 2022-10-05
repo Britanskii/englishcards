@@ -8,7 +8,8 @@ import Card from "../../components/card/Card"
 import Complete from "./complete/Complete"
 import useTypedSelector from "../../hooks/useTypedSelector"
 import useActions from "../../hooks/useActions"
-import {LearnSelected} from "../../store/types/types"
+import {LearnSelected, LearnType} from "../../store/types/types"
+import {deleteMistakesWord} from "../../store/actionCreators/mistakes"
 
 interface LearnProps {
     selected: LearnSelected
@@ -16,10 +17,9 @@ interface LearnProps {
 
 const Learn = (props: LearnProps) => {
 
-    const {setWords, setStateWords, addMistakesWord} = useActions()
+    const {setWords, setStateWords, addMistakesWord, deleteMistakesWord} = useActions()
 
-    const {words} = useTypedSelector(state => state.dictionary)
-    const {stateWords} = useTypedSelector(state => state.dictionary)
+    const {words, stateWords} = useTypedSelector(state => state.dictionary)
     const mistakes = useTypedSelector(state => state.mistakes)
 
     const [arrayCards, setArrayCards] = useState<CardI[]>([])
@@ -30,6 +30,13 @@ const Learn = (props: LearnProps) => {
     const getCardRandomId = (array: CardI[]) => array[getRandomIntenger(0, array.length)].id
 
     const onIKnow = (id: number) => {
+
+        if (props.selected.type === LearnType.MISTAKES) {
+            const activeCard = arrayCards.find(card => card.id === id)
+
+            deleteMistakesWord(activeCard!)
+        }
+
         if (arrayCards !== undefined) {
             const newArrayCards = arrayCards.filter((card) => card.id !== id)
 
@@ -41,7 +48,9 @@ const Learn = (props: LearnProps) => {
     }
 
     const onIDontKnow = () => {
-        addMistakesWord(arrayCards[activeCard], mistakes.words)
+        if (props.selected.type !== LearnType.MISTAKES) {
+            addMistakesWord(arrayCards[activeCard], mistakes.words)
+        }
 
         let id = getCardRandomId(arrayCards)
 
@@ -54,8 +63,9 @@ const Learn = (props: LearnProps) => {
         setActiveCard(id)
     }
 
+
     useEffect(() => {
-        if (props.selected.id) {
+        if (props.selected.type === LearnType.ID) {
             const words = props.selected.dictionary!.words
 
             setMaxCards(words.length)
@@ -63,11 +73,21 @@ const Learn = (props: LearnProps) => {
             setStateWords(words)
             setArrayCards(words)
             setActiveCard(getCardRandomId(words))
-        } else {
+        } else if (props.selected.type === LearnType.IDLE) {
             setMaxCards(words.length)
             setArrayCards(stateWords)
             if (stateWords.length > 0) {
                 setActiveCard(getCardRandomId(stateWords))
+            } else {
+                setIsAll(true)
+            }
+        } else if (props.selected.type === LearnType.MISTAKES) {
+            setMaxCards(mistakes.words.length)
+            setArrayCards(mistakes.stateWords)
+            setWords(mistakes.words)
+            setStateWords(mistakes.words)
+            if (mistakes.stateWords.length > 0) {
+                setActiveCard(getCardRandomId(mistakes.stateWords))
             } else {
                 setIsAll(true)
             }

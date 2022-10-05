@@ -8,11 +8,17 @@ export enum DictionaryActions {
 
 export enum MistakesActions {
     ADD_WORD = "ADD_WORD",
+    DELETE_WORD = "DELETE_WORD",
     NOTHING = "SET_STATE_DICTIONARY"
 }
 
 export interface AddMistakesWord {
     type: MistakesActions.ADD_WORD
+    payload: CardI
+}
+
+export interface DeleteMistakesWord {
+    type: MistakesActions.DELETE_WORD
     payload: CardI
 }
 
@@ -25,7 +31,7 @@ export interface DictionaryState {
     image: string
     title: string
     words: CardI[]
-    stateWords: CardI[]
+    stateWords?: CardI[]
 }
 
 export interface Dictionary {
@@ -35,8 +41,14 @@ export interface Dictionary {
     words: CardI[]
 }
 
+export enum LearnType {
+    ID,
+    IDLE,
+    MISTAKES
+}
+
 export interface LearnSelected {
-    id: boolean
+    type: LearnType
     dictionary?: Dictionary
 }
 
@@ -56,5 +68,5 @@ interface SetStateDictionaryAction {
 }
 
 export type DictionaryAction = SetPageAction | SetDictionaryAction | SetStateDictionaryAction
-export type MistakesAction = AddMistakesWord | MistakesNothing
+export type MistakesAction = AddMistakesWord | MistakesNothing | DeleteMistakesWord
 

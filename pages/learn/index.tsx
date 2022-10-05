@@ -1,9 +1,10 @@
 import Learn from "../../interfaces/learn/Learn"
+import {LearnType} from "../../store/types/types"
 
 const Index = () => {
 
     return (
-        <Learn selected={{id: false}}/>
+        <Learn selected={{type: LearnType.IDLE}}/>
     )
 }
 

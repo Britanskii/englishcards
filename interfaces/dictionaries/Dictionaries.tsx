@@ -5,10 +5,11 @@ import {motion} from "framer-motion"
 import Link from "../../components/link/Link"
 import useActions from "../../hooks/useActions"
 import useTypedSelector from "../../hooks/useTypedSelector"
+import {DictionaryState} from "../../store/types/types"
+import mistakes from "../../pages/learn/mistakes"
 
 const Dictionaries = () => {
     const mistakes = useTypedSelector(state => state.mistakes)
-    const dictionary = useTypedSelector(state => state.dictionary)
 
     const {setDictionaryId} = useActions()
 
@@ -24,38 +25,45 @@ const Dictionaries = () => {
         }
     }
 
-    const dictionaries = [...data, mistakes].map(({id, image, title}, index) => {
+    const createDictionary = (dictionary: DictionaryState, index: number) => {
 
         const setDictionary = () => {
-                setDictionaryId(id)
+            setDictionaryId(dictionary.id)
         }
 
         return (
             <motion.li
                 onClick={setDictionary}
-                key={`${image}_${index}`}
+                key={`${dictionary.image}_${dictionary.id}`}
                 custom={index}
                 variants={variants}
                 initial={{opacity: 0, x: -200}}
                 animate={"appearance"}
                 className={s.dictionaries__wrapper}
             >
-                <Link className={s.dictionaries__item} href={`/learn/${id}`}>
+                <Link className={s.dictionaries__item} href={`/learn/${dictionary.id}`}>
                     <div className={s.dictionaries__view}>
-                        <Image src={image} className={s.dictionaries__image}/>
+                        <Image src={dictionary.image} className={s.dictionaries__image}/>
                     </div>
                     <div className={s.dictionaries__text}>
-                        {title}
+                        {dictionary.title}
                     </div>
                 </Link>
             </motion.li>
         )
+    }
+
+    const dictionaries = data.map((dictionary, index) => {
+        return createDictionary(dictionary, index)
     })
+
+    const mistakesDictionary = mistakes.words.length > 1 ? createDictionary(mistakes, dictionaries.length) : null
 
     return (
         <div className={s.dictionaries}>
             <ul className={s.dictionaries__list}>
                 {dictionaries}
+                {mistakesDictionary}
             </ul>
         </div>
     )

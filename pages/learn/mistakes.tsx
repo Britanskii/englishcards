@@ -1,12 +1,12 @@
+import Learn from "../../interfaces/learn/Learn"
+import {LearnType} from "../../store/types/types"
 
 
-const Mistakes = () => {
+const Index = () => {
 
     return (
-        <div>
-            Аниме
-        </div>
+        <Learn selected={{type: LearnType.MISTAKES}}/>
     )
 }
 
-export default Mistakes
+export default Index
