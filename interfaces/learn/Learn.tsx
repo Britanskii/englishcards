@@ -75,19 +75,19 @@ const Learn = (props: LearnProps) => {
             setActiveCard(getCardRandomId(words))
         } else if (props.selected.type === LearnType.IDLE) {
             setMaxCards(words.length)
-            setArrayCards(stateWords)
-            if (stateWords.length > 0) {
-                setActiveCard(getCardRandomId(stateWords))
+            setArrayCards(stateWords!)
+            if (stateWords!.length > 0) {
+                setActiveCard(getCardRandomId(stateWords!))
             } else {
                 setIsAll(true)
             }
         } else if (props.selected.type === LearnType.MISTAKES) {
             setMaxCards(mistakes.words.length)
-            setArrayCards(mistakes.stateWords)
+            setArrayCards(mistakes.stateWords!)
             setWords(mistakes.words)
             setStateWords(mistakes.words)
-            if (mistakes.stateWords.length > 0) {
-                setActiveCard(getCardRandomId(mistakes.stateWords))
+            if (mistakes.stateWords!.length > 0) {
+                setActiveCard(getCardRandomId(mistakes.stateWords!))
             } else {
                 setIsAll(true)
             }
